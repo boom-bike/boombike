@@ -1,10 +1,66 @@
+{% load staticfiles %}
+<!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  </head>
-  <body>
-    TODO write content
-    {{ test }}
-  </body>
+    <head>
+        <title>Boom Bike ~~~</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="description" content="Toutes les infos nécessaires pour aller au Boom Festival à vélo">
+        <meta name="author" content="Quentin CARON">
+
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/parallax.css' %}">
+        <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+        <script src="{% static 'js/parallax.js' %}"></script>
+    </head>
+    <body>
+        <header>
+            <h1>- Boom Bike -</h1>
+        </header>
+
+        <section id="cyclotourism" data-speed="4" data-type="background">
+            <article>
+                <div class="article_content">
+                    <div class="title cyclotourism">Cyclotoursime</div>
+                    <div class="content">
+                        Le tourisme à vélo, c'est du sport!
+                        <br>
+                        Faire du vélo est un bon moyen d'être en forme.
+                        <br>
+                        Aller à la rencontre des locaux
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="boom" data-speed="10" data-type="background">
+            <article>
+                <div class="article_content">
+                    <div class="title boom">Boom Festival</div>
+                    <div class="content">
+                        C'est quoi le Boom?
+                        <br>
+                        C'est pas trop mon genre...
+                        <br>
+                        Vous y êtes déjà!
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="boom_and_bike" data-speed="10" data-type="background">
+            <article>
+                <div class="article_content">
+                    <div class="title boom_and_bike">Boom & Vélo</div>
+                    <div class="content">
+                        Un esprit commun
+                        <br>
+                        Des valeurs humaines
+                        <br>
+                        All in one!
+                    </div>
+                </div>
+            </article>
+        </section>
+    </body>
 </html>

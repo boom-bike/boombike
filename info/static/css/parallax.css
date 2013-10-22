@@ -1,0 +1,43 @@
+section#cyclotourism {
+    background: url(/static/img/cyclotourism_HD.jpg) 50% 0% no-repeat fixed;
+}
+
+section#boom {
+    background: url(/static/img/boom_by_night_HD.jpg) 50% 0% no-repeat fixed;
+}
+
+section#boom_and_bike {
+    background: url(/static/img/boom_bikers_HD.jpg) 50% 0% no-repeat fixed;
+}
+
+section#boom,
+section#cyclotourism,
+section#boom_and_bike {
+    height: 800px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+/* Introduction */
+
+section#cyclotourism article,
+section#boom article,
+section#boom_and_bike article
+{
+    height: 450px;
+    top: 250px;
+}
+
+section#boom_and_bike article,
+section#cyclotourism article,
+section#boom article {
+    position: absolute;
+    width: 100%;
+}
+
+section#cyclotourism article {
+    top: 150px;
+}
