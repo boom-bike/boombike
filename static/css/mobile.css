@@ -1,0 +1,24 @@
+/* 
+    Document   : mobile
+    Created on : 9 nov. 2013, 13:22:09
+    Author     : Quentin CARON
+    Description:
+        Nice display on mobiles using CSS media queries.
+*/
+
+div.title {
+    font-size: 10vw;
+}
+
+div.content {
+    font-size: 5vw;
+}
+
+div.article_content {
+    width: 70%;
+}
+
+img.share {
+    width: 32px;
+    height: 32px;
+}
