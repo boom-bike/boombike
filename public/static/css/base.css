@@ -1,0 +1,335 @@
+/* Webiste-wide properties */
+body{
+    margin:0;
+    padding:0;
+}
+
+/* Home page */
+section.cyclotourism,
+section.boom_and_bike,
+section.boom
+{
+    color: white;
+    text-align: center;
+}
+
+section.cyclotourism article,
+section.boom article,
+section.boom_and_bike article
+{
+}
+
+div.article_content {
+    width: 65%;
+
+    margin: 0 auto;
+    text-align: left;
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+    /* Opacity */
+    background: rgba(40, 40, 40, 0.6);
+
+    /* Rounded Corners */
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+
+header {
+    background-color: #A15050;
+    position: relative;
+    width: 100%;
+    display: table;
+    height: 120px;
+}
+
+header div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-family: Montserrat Subrayada;
+    font-size: 48px;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+div.title {
+    /* Rounded Corners */
+    -moz-border-radius: 20px 20px 0px 0px;
+    -webkit-border-radius: 20px 20px 0px 0px;
+    -khtml-border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(10, 10, 10, 0.6);
+
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #AFAFAF;
+    font-family: Bonbon;
+
+    /* Bottom border */
+    border-bottom: 4px solid black;
+
+    /* Avoid the rounded corners collaterals */
+    margin-left: -15px;
+    margin-right: -15px;
+
+    -webkit-box-shadow: 0 3px 2px -2px #000000;
+    -moz-box-shadow: 0 3px 2px -2px #000000;
+    box-shadow: 0 3px 2px -2px #000000;
+
+    text-shadow: 1px 1px 0 #FFFFFF;
+
+}
+
+div.cyclotourism {
+    color: #80D080;
+}
+
+div.boom {
+    color: #7070FF;
+}
+
+div.boom_and_bike {
+    color: #FF4545;
+}
+
+div.content {
+    font-family: Bad Script;
+    font-size: 3vw;
+/*    font-weight: bold;*/
+    text-align: center;
+    color: #DFDFDF;
+}
+
+div#home_nav {
+    position: fixed;
+    top: 45%;
+    right: 10px;
+    z-index: 999;
+    background: rgba(220, 220, 220, 0.5);
+
+    padding: 5px;
+
+    /* Rounded Corners */
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -khtml-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: #A15050;
+}
+
+footer div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+hr.title_underline {
+    color: #f00;
+    background-color: #f00;
+    border: 0;
+    height: 5px;
+    margin-top: -10px
+}
+
+span.share {
+    position: absolute;
+    top: 35px;
+    right: 60px;
+    border-radius: 10px 10px 10px 10px;
+/*    border: 5px solid black;*/
+}
+
+/*
+ * Links
+ */
+
+ a {
+     text-decoration: none;
+}
+
+h1 a {
+     color: #000000;
+}
+
+
+/*
+ * Fonts
+ */
+
+@font-face {
+  font-family: 'Bonbon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bonbon'), local('Bonbon-Regular'), url(/static/fonts/bonbon.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Bad Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bad Script Regular'), local('BadScript-Regular'), url(/static/fonts/badscript.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat Subrayada';
+  font-style: normal;
+  font-weight: 400;
+  src: local('MontserratSubrayada-Regular'), url(/static/fonts/MontserratSubrayada.woff) format('woff');
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+}
+
+div#div_previous_nav {
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+}
+
+#home_nav img {
+    width: 32px;
+    height: 32px;
+}
+
+a#current_section {
+    display: none;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+img.img32 {
+    width: 32px;
+    height: 32px;
+}
+
+img.img48 {
+    width: 48px;
+    height: 48px;
+}
+
+img.img64 {
+    width: 64px;
+    height: 64px;
+}
+
+img.nav {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Modal */
+.contact_dialog, .share_dialog {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    font-family: Arial,Helvetica,sans-serif;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity 400ms ease-in 0s;
+    z-index: 99999;
+}
+
+.contact_dialog:target, .share_dialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.contact_dialog > div, .share_dialog > div {
+    background: linear-gradient(#FFFFFF, #999999) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 10px 10px 10px 10px;
+    margin: 10% auto;
+    padding: 5px 20px 13px;
+    position: relative;
+    width: 400px;
+}
+
+.close {
+    background: none repeat scroll 0 0 #606061;
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: 1px 1px 3px #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    text-decoration: none;
+    top: -10px;
+    width: 24px;
+}
+
+.close:hover {
+    background: none repeat scroll 0 0 #00D9FF;
+}
+
+div.contact_title {
+    width: 100%;
+}
+
+div.contact_title h2 {
+    font-family: Bad Script;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 5px solid #6060FF;
+}
+
+div.share_title {
+    width: 100%;
+}
+
+div#contact p {
+    font-family: Bad Script;
+    font-size: 19px;
+}
+
+div.share_title h2 {
+    font-family: Bad Script;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 5px solid #6060FF;
+}
+
+div.share_column {
+    width: 33%;
+    text-align: center;
+}
+
+div.share_column h3 {
+    font-family: Bad Script;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
