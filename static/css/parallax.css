@@ -1,11 +1,32 @@
-#home {
-    background: url(home-bg.jpg) 50% 0 repeat fixed;
+section.cyclotourism {
+    background: url(/static/img/cyclotourism_HD.jpg) 50% 0% no-repeat fixed;
 }
 
-#about {
-    background: url(about-bg.jpg) 50% 0 no-repeat;
+section.boom {
+    background: url(/static/img/boom_by_night_HD.jpg) 50% 0% no-repeat fixed;
 }
 
-#home, #about {
-    min-height: 1000px;
+section.boom_and_bike {
+    background: url(/static/img/boom_bikers_HD.jpg) 50% 0% no-repeat fixed;
+}
+
+section.boom,
+section.cyclotourism,
+section.boom_and_bike {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    display: table;
+}
+
+section.boom_and_bike article,
+section.cyclotourism article,
+section.boom article {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display:table-cell;
+    vertical-align: middle;
 }
