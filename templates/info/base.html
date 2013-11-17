@@ -5,62 +5,123 @@
         <title>Boom Bike ~~~</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
-        <meta name="description" content="Toutes les infos nécessaires pour aller au Boom Festival à vélo">
+        <meta name="description"
+              content="Toutes les infos nécessaires pour aller au Boom Festival à vélo">
         <meta name="author" content="Quentin CARON">
 
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" media="(max-width: 800px)" href="{% static 'css/mobile.css' %}">
+        
         <link rel="stylesheet" href="{% static 'css/parallax.css' %}">
         <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
         <script src="{% static 'js/parallax.js' %}"></script>
+        <script src="{% static 'js/links_scroll.js' %}"></script>
+
+        <script>
+            var static_url = "{% static '' %}";
+        </script>
+
+        {% block head %}
+        {% endblock %}
+
     </head>
     <body>
-        <header>
-            <h1>- Boom Bike -</h1>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <header id="header" data-scroll="yes">
+            <h1>
+                <a href="/">- Boom Bike -</a>
+            </h1>
+            <span class="share">
+                <a href="#share">
+                    <img src="{% static 'img/facebook.png' %}" alt="Accueil" class="img48 share">
+                </a>
+                <a href="#share">
+                    <img src="{% static 'img/twitter.png' %}" alt="Accueil" class="img48 share">
+                </a>
+                <a href="#share">
+                    <img src="{% static 'img/google_plus.png' %}" alt="Accueil" class="img48 share">
+                </a>
+            </span>
         </header>
+        
+        {% block content %}
+        {% endblock %}
+        <footer id="footer" data-scroll="yes">
+            <div>
+                <a href="#contact">
+                    <img src="{% static 'img/email.png' %}" alt="email" class="img64">
+                </a>
+            </div>
+        </footer>
 
-        <section id="cyclotourism" data-speed="4" data-type="background">
-            <article>
-                <div class="article_content">
-                    <div class="title cyclotourism">Cyclotoursime</div>
-                    <div class="content">
-                        Le tourisme à vélo, c'est du sport!
-                        <br>
-                        Faire du vélo est un bon moyen d'être en forme.
-                        <br>
-                        Aller à la rencontre des locaux
-                    </div>
+        <div id="contact" class="contact_dialog">
+            <div>
+                <a class="close" title="Close" href="#close">X</a>
+                <div class="contact_title">
+                    <h2>Contact</h2>
                 </div>
-            </article>
-        </section>
+<!--                <hr class="title_underline">-->
+                <p>Des questions? Besoin d'informations?</p>
+                <p>
+                    Contactez-moi sur
+                    <a href="mailto:contact@boom-bike.info" target="_top">
+                        contact@boom-bike.info
+                    </a>
+                </p>
+            </div>
+        </div>
 
-        <section id="boom" data-speed="10" data-type="background">
-            <article>
-                <div class="article_content">
-                    <div class="title boom">Boom Festival</div>
-                    <div class="content">
-                        C'est quoi le Boom?
-                        <br>
-                        C'est pas trop mon genre...
-                        <br>
-                        Vous y êtes déjà!
-                    </div>
+        <div id="share" class="share_dialog">
+            <div>
+                <a class="close" title="Close" href="#close">X</a>
+                <div class="share_title">
+                    <h2>Share me all night long...</h2>
                 </div>
-            </article>
-        </section>
+                <div class="left share_column">
+                    <h3>Facebook</h3>
+                    <div class="fb-share-button" data-href="http://boom-bike.info"
+                         data-width="200"
+                         data-type="box_count"></div>
+                </div>
 
-        <section id="boom_and_bike" data-speed="10" data-type="background">
-            <article>
-                <div class="article_content">
-                    <div class="title boom_and_bike">Boom & Vélo</div>
-                    <div class="content">
-                        Un esprit commun
-                        <br>
-                        Des valeurs humaines
-                        <br>
-                        All in one!
-                    </div>
+                <div class="left share_column">
+                    <h3>Twitter</h3>
+                    <a href="https://twitter.com/share" class="twitter-share-button"
+                       data-url="http://boom-bike.info"
+                       data-text="Cycle it to Boom" data-via="boom_bike_info"
+                       data-lang="fr" data-size="large">Tweeter</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 </div>
-            </article>
-        </section>
+
+                <div class="left share_column">
+                    <h3>Google +</h3>
+                    <div class="g-plus" data-action="share" data-href="http://boom-bike.info"
+                         data-annotation="vertical-bubble"></div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- Google + async -->
+        <script type="text/javascript">
+          window.___gcfg = {
+              lang: 'fr'
+          };
+
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+
     </body>
 </html>

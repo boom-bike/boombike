@@ -3,6 +3,6 @@
 
 from django.shortcuts import render
 
-def home(request, template='info/base.html'):
+def home(request, template='info/home.html'):
     return render(request, template, {'test' : 'test test test'})
 
