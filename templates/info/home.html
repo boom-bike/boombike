@@ -1,0 +1,85 @@
+{% extends "info/base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+    <script>
+            $(document).ready(function(){
+                /*
+                 * Resize home page sections on window resize
+                 */
+                function resize_sections() {
+                    $("section").each(function() {
+                        $(this).height($(window).height());
+                    });
+                }
+
+                // Hook the event
+                resize_sections();
+
+                // Resize for intitialization
+                $(window).resize(function() {
+                    resize_sections();
+                });
+
+            });
+        </script>
+{% endblock %}
+
+{% block content %}
+        <div id="home_nav">
+            <a href="#" title="" class="smooth_scroll">
+                <img src="{% static 'img/arrow_up.png' %}" alt="o" class="arrow" id="previous">
+            </a><br>
+            <a href="#" title="" class="smooth_scroll">
+                <img src="{% static 'img/arrow_down.png' %}" alt="o" class="arrow" id="next">
+            </a><br>
+        </div>
+
+        <section id="cyclotourism" class="cyclotourism" data-speed="5" data-type="background"
+                 data-scroll="yes">
+            <article>
+                <div class="article_content">
+                    <div class="title cyclotourism">Cyclotourisme</div>
+                    <div class="content">
+                        ... ou cyclo-randonnée?
+                        <br>
+                        Un bon moyen d'être en forme!
+                        <br>
+                        A la rencontre des locaux
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="boom" class="boom" data-speed="10" data-type="background"
+                 data-scroll="yes">
+            <article>
+                <div class="article_content">
+                    <div class="title boom">Boom Festival</div>
+                    <div class="content">
+                        C'est quoi le Boom?
+                        <br>
+                        C'est pas trop mon genre...
+                        <br>
+                        Vous y êtes déjà!
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="boom_and_bike" class="boom_and_bike" data-speed="10" data-type="background"
+                 data-scroll="yes">
+            <article>
+                <div class="article_content">
+                    <div class="title boom_and_bike">Boom et Vélo</div>
+                    <div class="content">
+                        Un état d'esprit...
+                        <br>
+                        ... et des valeurs communes
+                        <br>
+                        All in one !
+                    </div>
+                </div>
+            </article>
+        </section>
+{% endblock %}
