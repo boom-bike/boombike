@@ -9,7 +9,7 @@
 
 $(document).ready(function(){
     // We do not want the section background to move for mobiles
-    if (! window.mobilecheck) {
+    if (! window.mobilecheck() ) {
         // Cache the Window object
         $window = $(window);
 
