@@ -248,7 +248,7 @@ img.nav {
 
 /* Modal */
 .contact_dialog, .share_dialog {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+/*    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
     bottom: 0;
     font-family: Arial,Helvetica,sans-serif;
     left: 0;
@@ -258,7 +258,24 @@ img.nav {
     right: 0;
     top: 0;
     transition: opacity 400ms ease-in 0s;
+    z-index: 99999;*/
+    position: fixed;
+/*    font-family: "Trebuchet MS", Helvetica, sans-serif;*/
+    font-family: Arial,Helvetica,sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background: rgba(0,0,0,0.8);
     z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    -ms-transition: opacity 400ms ease-in;
+    -o-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
 
 .contact_dialog:target, .share_dialog:target {
@@ -267,16 +284,31 @@ img.nav {
 }
 
 .contact_dialog > div, .share_dialog > div {
-    background: linear-gradient(#FFFFFF, #999999) repeat scroll 0 0 rgba(0, 0, 0, 0);
+/*    background: linear-gradient(#FFFFFF, #999999) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border-radius: 10px 10px 10px 10px;
     margin: 10% auto;
     padding: 5px 20px 13px;
     position: relative;
-    width: 400px;
+    width: 400px;*/
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(#FFFFFF, #999999);
+    background: -webkit-linear-gradient(#FFFFFF, #999999);
+    background: -o-linear-gradient(#FFFFFF, #999999);
 }
 
 .close {
-    background: none repeat scroll 0 0 #606061;
+/*    background: none repeat scroll 0 0 #606061;
     border-radius: 12px 12px 12px 12px;
     box-shadow: 1px 1px 3px #000000;
     color: #FFFFFF;
@@ -287,7 +319,27 @@ img.nav {
     text-align: center;
     text-decoration: none;
     top: -10px;
+    width: 24px;*/
+    background: #285C82;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
     width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+    -o-box-shadow: 1px 1px 3px #000;
+    -ms-box-shadow: 1px 1px 3px #000;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
 }
 
 .close:hover {
