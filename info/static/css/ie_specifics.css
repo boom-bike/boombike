@@ -1,0 +1,7 @@
+.contact_dialog, .share_dialog {
+    display : none;
+}
+
+.contact_dialog:target, .share_dialog:target {
+    display : block;
+}
