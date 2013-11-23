@@ -21,7 +21,7 @@ section.boom_and_bike article
 
 div.article_content {
     width: 65%;
-
+    max-width: 900px;
     margin: 0 auto;
     text-align: left;
     font-size: 22px;
@@ -332,4 +332,7 @@ div.share_column h3 {
     padding-top: 0px;
 }
 
-
+/* Fucking IE fixes */
+a img { 
+    border: none;
+}
