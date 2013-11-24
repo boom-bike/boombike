@@ -22,7 +22,8 @@ section.boom_and_bike {
 }
 
 
-@media (orientation:portrait) {
+@media (orientation:landscape) and (min-width:1900px) and (min-height:1050px),
+(orientation:portrait) and (min-width:1050px) and (min-height:1900px) {
     section.boom,
     section.cyclotourism,
     section.boom_and_bike {
