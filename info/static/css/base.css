@@ -248,19 +248,7 @@ img.nav {
 
 /* Modal */
 .contact_dialog, .share_dialog {
-/*    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
-    bottom: 0;
-    font-family: Arial,Helvetica,sans-serif;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
     position: fixed;
-    right: 0;
-    top: 0;
-    transition: opacity 400ms ease-in 0s;
-    z-index: 99999;*/
-    position: fixed;
-/*    font-family: "Trebuchet MS", Helvetica, sans-serif;*/
     font-family: Arial,Helvetica,sans-serif;
     top: 0;
     right: 0;
@@ -284,13 +272,8 @@ img.nav {
 }
 
 .contact_dialog > div, .share_dialog > div {
-/*    background: linear-gradient(#FFFFFF, #999999) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border-radius: 10px 10px 10px 10px;
-    margin: 10% auto;
-    padding: 5px 20px 13px;
-    position: relative;
-    width: 400px;*/
     width: 40%;
+    min-width: 400px;
     max-width: 600px;
     height: auto;
     position: relative;
@@ -308,18 +291,6 @@ img.nav {
 }
 
 .close {
-/*    background: none repeat scroll 0 0 #606061;
-    border-radius: 12px 12px 12px 12px;
-    box-shadow: 1px 1px 3px #000000;
-    color: #FFFFFF;
-    font-weight: bold;
-    line-height: 25px;
-    position: absolute;
-    right: -12px;
-    text-align: center;
-    text-decoration: none;
-    top: -10px;
-    width: 24px;*/
     background: #285C82;
     color: #FFFFFF;
     line-height: 25px;
