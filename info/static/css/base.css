@@ -33,10 +33,12 @@ div.article_content {
     background: rgba(40, 40, 40, 0.6);
 
     /* Rounded Corners */
+    border-radius: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
-    border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 header {
@@ -64,6 +66,8 @@ div.title {
     -moz-border-radius: 20px 20px 0px 0px;
     -webkit-border-radius: 20px 20px 0px 0px;
     -khtml-border-radius: 20px 20px 0px 0px;
+    -ms-border-radius: 20px 20px 0px 0px;
+    -o-border-radius: 20px 20px 0px 0px;
     border-radius: 20px 20px 0px 0px;
     background: rgba(10, 10, 10, 0.6);
 
@@ -83,6 +87,9 @@ div.title {
 
     -webkit-box-shadow: 0 3px 2px -2px #000000;
     -moz-box-shadow: 0 3px 2px -2px #000000;
+    -khtml-box-shadow: 0 3px 2px -2px #000000;
+    -ms-box-shadow: 0 3px 2px -2px #000000;
+    -o-box-shadow: 0 3px 2px -2px #000000;
     box-shadow: 0 3px 2px -2px #000000;
 
     text-shadow: 1px 1px 0 #FFFFFF;
@@ -119,10 +126,12 @@ div#home_nav {
     padding: 5px;
 
     /* Rounded Corners */
+    border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     -khtml-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
 }
 
 /*
@@ -157,6 +166,11 @@ span.share {
     top: 35px;
     right: 60px;
     border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
 /*    border: 5px solid black;*/
 }
 
@@ -260,6 +274,7 @@ img.nav {
     opacity:0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
+    -khtml-transition: opacity 400ms ease-in;
     -ms-transition: opacity 400ms ease-in;
     -o-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
@@ -282,6 +297,7 @@ img.nav {
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     background: #FFFFFF;
@@ -305,11 +321,13 @@ img.nav {
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    -khtml-border-radius: 12px;
     border-radius: 12px;
     -o-box-shadow: 1px 1px 3px #000;
     -ms-box-shadow: 1px 1px 3px #000;
     -moz-box-shadow: 1px 1px 3px #000;
     -webkit-box-shadow: 1px 1px 3px #000;
+    -khtml-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
 }
 
