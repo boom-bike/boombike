@@ -288,7 +288,7 @@ img.nav {
 
 .contact_dialog > div, .share_dialog > div {
     width: 40%;
-    min-width: 400px;
+    min-width: 315px;
     max-width: 600px;
     height: auto;
     position: relative;
