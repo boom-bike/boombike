@@ -22,7 +22,7 @@ section.boom_and_bike {
 }
 
 
-@media (min-height:1000px) and (orientation:portrait) {
+@media (orientation:portrait) {
     section.boom,
     section.cyclotourism,
     section.boom_and_bike {
@@ -33,7 +33,7 @@ section.boom_and_bike {
         -ms-background-size: cover;
         -o-background-size: cover;
 
-        background-position: 50% 50%;
+        background-position: 50% 0;
     }
 }
 

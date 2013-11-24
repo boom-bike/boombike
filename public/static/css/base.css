@@ -300,9 +300,12 @@ img.nav {
     -khtml-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    
     background: #FFFFFF;
     background: -moz-linear-gradient(#FFFFFF, #999999);
     background: -webkit-linear-gradient(#FFFFFF, #999999);
+    background: -khtml-linear-gradient(#FFFFFF, #999999);
+    background: -ms-linear-gradient(#FFFFFF, #999999);
     background: -o-linear-gradient(#FFFFFF, #999999);
 }
 
@@ -317,18 +320,20 @@ img.nav {
     width: 24px;
     text-decoration: none;
     font-weight: bold;
+    
+    border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
     -khtml-border-radius: 12px;
-    border-radius: 12px;
+
+    box-shadow: 1px 1px 3px #000;
     -o-box-shadow: 1px 1px 3px #000;
     -ms-box-shadow: 1px 1px 3px #000;
     -moz-box-shadow: 1px 1px 3px #000;
     -webkit-box-shadow: 1px 1px 3px #000;
     -khtml-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
 }
 
 .close:hover {
