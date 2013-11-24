@@ -33,6 +33,7 @@ $(document).ready(function(){
         });
     }
 });
+
 /*
  * Create HTML5 elements for IE's sake
  */

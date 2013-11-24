@@ -19,6 +19,19 @@ section.boom_and_bike {
     position: relative;
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     display: table;
+
+    background-repeat: no-repeat;
+    overflow: auto;
+
+/*     background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -khtml-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;*/
+
+    background-position: 50% 0;
+
 }
 
 
