@@ -4,5 +4,8 @@
 from django.shortcuts import render
 
 def home(request, template='info/home.html'):
-    return render(request, template, {'test' : 'test test test'})
+    return render(request, template, {})
+
+def test(request, template='info/test.html'):
+    return render(request, template, {})
 

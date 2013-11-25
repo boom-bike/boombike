@@ -22,9 +22,53 @@
         
         <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
         <script src="{% static 'js/mobile.js' %}"></script>
+        <script src="{% static 'js/jquery.bpopup.min.js' %}"></script>
 
         <script>
             var static_url = "{% static '' %}";
+            
+            $(function() {
+                $('span.share').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#share').bPopup();
+                });
+                
+                $('a#popup_contact').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#contact').bPopup();
+                });
+            });
+
+    (function($) {
+        $(function() {
+
+            $('span.share').bind('click', function(e) {
+
+                // Prevents the default action to be triggered.
+                e.preventDefault();
+
+                // Triggering bPopup when click event is fired
+                $('#share').bPopup();
+//                $('#contact').bPopup();
+
+            });
+
+        });
+
+    })(jQuery);
+
+//            $(function() {
+//                $("span.share").click(function(event) {
+////                    alert("clicked");
+//                    event.preventDefault();
+//                    $("#test").bPopup();
+//                });
+//
+//                $("#popup_contact").click(function(event) {
+//                    event.preventDefault();
+//                    $('#contact').bPopup();
+//                });
+//            });
         </script>
 
         {% block head %}
@@ -61,60 +105,61 @@
         {% endblock %}
         <footer id="footer" data-scroll="yes">
             <div>
-                <a href="#contact">
+                <a href="#contact" id="popup_contact">
                     <img src="{% static 'img/email.png' %}" alt="email" class="img64">
                 </a>
             </div>
         </footer>
 
-        <div id="contact" class="contact_dialog">
-            <div>
-                <a class="close" title="Close" href="#close">X</a>
-                <div class="contact_title">
-                    <h2>Contact</h2>
-                </div>
-<!--                <hr class="title_underline">-->
-                <p>Des questions? Besoin d'informations?</p>
-                <p>
-                    Contactez-moi sur
-                    <a href="mailto:contact@boom-bike.info" target="_top">
-                        contact@boom-bike.info
-                    </a>
-                </p>
+        <div id="share" class="popup">
+            <span class="button b-close">
+                <span>X</span>
+            </span>
+            
+            <div class="share_title">
+                <h2>Share me all night long...</h2>
             </div>
+            <div class="left share_column">
+                <h3>Facebook</h3>
+                <div class="fb-share-button"
+                     data-href="http://boom-bike.info"
+                     data-width="200"
+                     data-type="box_count"></div>
+            </div>
+
+            <div class="left share_column">
+                <h3>Twitter</h3>
+                <a href="https://twitter.com/share" class="twitter-share-button"
+                   data-url="http://boom-bike.info"
+                   data-text="Cycle it to Boom" data-via="boom_bike_info"
+                   data-lang="fr" data-size="large">Tweeter</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+
+            <div class="left share_column">
+                <h3>Google +</h3>
+                <div class="g-plus" data-action="share" data-href="http://boom-bike.info"
+                     data-annotation="vertical-bubble"></div>
+            </div>
+
+            <div class="clear"></div>
         </div>
 
-        <div id="share" class="share_dialog">
-            <div>
-                <a class="close" title="Close" href="#close">X</a>
-                <div class="share_title">
-                    <h2>Share me all night long...</h2>
-                </div>
-                <div class="left share_column">
-                    <h3>Facebook</h3>
-                    <div class="fb-share-button"
-                         data-href="http://boom-bike.info"
-                         data-width="200"
-                         data-type="box_count"></div>
-                </div>
+        <div id="contact" class="popup">
+            <span class="button b-close">
+                <span>X</span>
+            </span>
 
-                <div class="left share_column">
-                    <h3>Twitter</h3>
-                    <a href="https://twitter.com/share" class="twitter-share-button"
-                       data-url="http://boom-bike.info"
-                       data-text="Cycle it to Boom" data-via="boom_bike_info"
-                       data-lang="fr" data-size="large">Tweeter</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                </div>
-
-                <div class="left share_column">
-                    <h3>Google +</h3>
-                    <div class="g-plus" data-action="share" data-href="http://boom-bike.info"
-                         data-annotation="vertical-bubble"></div>
-                </div>
-
-                <div class="clear"></div>
+            <div class="contact_title">
+                <h2>Contact</h2>
             </div>
+            <p>Des questions? Besoin d'informations?</p>
+            <p>
+                Contactez-moi sur
+                <a href="mailto:contact@boom-bike.info" target="_top">
+                    contact@boom-bike.info
+                </a>
+            </p>
         </div>
 
         <!-- Google + async -->

@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+        <script src="{% static 'js/jquery.bpopup.min.js' %}"></script>
+
+        <script>
+            $(function() {
+                $("input[name=pop_it_up]").click(function(event) {
+                    // Prevents the default action to be triggered.
+                    event.preventDefault();
+
+                    // Triggering bPopup when click event is fired
+                    $('#pop_me').bPopup();
+                });
+            });
+        </script>
+
+        <style>
+            #pop_me {
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        ==============
+        <input type="button" value="pop it up" name="pop_it_up">
+        <div id="pop_me">
+            <h1>
+                Test
+            </h1>
+            <p>
+                This is a test
+            </p>
+        </div>
+    </body>
+
+</html>

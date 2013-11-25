@@ -261,7 +261,52 @@ img.nav {
 }
 
 /* Modal */
-.contact_dialog, .share_dialog {
+.popup {
+    display: none;
+}
+
+.popup {
+    background-color: #FAFAFA;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    min-width: 450px;
+    padding: 15px;
+}
+
+.button.b-close {
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+
+    background-color: #2b91af;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button.b-close:hover {
+    background-color: #000000;
+}
+
+
+/*.contact_dialog, .share_dialog {
     position: fixed;
     font-family: Arial,Helvetica,sans-serif;
     top: 0;
@@ -338,7 +383,7 @@ img.nav {
 
 .close:hover {
     background: none repeat scroll 0 0 #00D9FF;
-}
+}*/
 
 div.contact_title {
     width: 100%;
