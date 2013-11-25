@@ -23,19 +23,19 @@ section.boom_and_bike {
     background-repeat: no-repeat;
     overflow: auto;
 
-/*     background-size: cover;
+     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -khtml-background-size: cover;
     -ms-background-size: cover;
-    -o-background-size: cover;*/
+    -o-background-size: cover;
 
-    background-position: 50% 0;
+    background-position: 50% 50%;
 
 }
 
 
-@media (orientation:landscape) and (min-width:1900px) and (min-height:1050px),
+/*@media (orientation:landscape) and (min-width:1900px) and (min-height:1050px),
 (orientation:portrait) and (min-width:1050px) and (min-height:1900px) {
     section.boom,
     section.cyclotourism,
@@ -49,7 +49,7 @@ section.boom_and_bike {
 
         background-position: 50% 0;
     }
-}
+}*/
 
 section.boom_and_bike article,
 section.cyclotourism article,
