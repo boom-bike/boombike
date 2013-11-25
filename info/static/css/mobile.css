@@ -18,13 +18,17 @@ div.article_content {
     width: 70%;
 }
 
-img.share {
+img.share, img.contact {
     width: 32px;
     height: 32px;
 }
 
-header {
+header, footer {
     height: 100px;
+}
+
+footer {
+    height: 60px;
 }
 
 header h1 {

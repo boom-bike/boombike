@@ -38,37 +38,6 @@
                     $('#contact').bPopup();
                 });
             });
-
-    (function($) {
-        $(function() {
-
-            $('span.share').bind('click', function(e) {
-
-                // Prevents the default action to be triggered.
-                e.preventDefault();
-
-                // Triggering bPopup when click event is fired
-                $('#share').bPopup();
-//                $('#contact').bPopup();
-
-            });
-
-        });
-
-    })(jQuery);
-
-//            $(function() {
-//                $("span.share").click(function(event) {
-////                    alert("clicked");
-//                    event.preventDefault();
-//                    $("#test").bPopup();
-//                });
-//
-//                $("#popup_contact").click(function(event) {
-//                    event.preventDefault();
-//                    $('#contact').bPopup();
-//                });
-//            });
         </script>
 
         {% block head %}
@@ -106,7 +75,7 @@
         <footer id="footer" data-scroll="yes">
             <div>
                 <a href="#contact" id="popup_contact">
-                    <img src="{% static 'img/email.png' %}" alt="email" class="img64">
+                    <img src="{% static 'img/email.png' %}" alt="email" class="img64 contact">
                 </a>
             </div>
         </footer>
