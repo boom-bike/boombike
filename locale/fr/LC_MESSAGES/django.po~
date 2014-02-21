@@ -1,0 +1,57 @@
+# boom-bike.info en translation
+# Copyright (C) 2014
+# Quentin CARON <quentin.caron@gmail.com>, 2014
+
+#: templates/info/bicycle_touring.html:17
+msgid "Bicycle Touring"
+msgstr "Cyclotourisme"
+
+msgid "... or bicycle trekking?"
+msgstr "... ou cyclo-randonnée?"
+
+msgid "A good way to get fitted!"
+msgstr "Un bon moyen d'être en forme!"
+
+msgid "Getting closer to locals"
+msgstr "A la rencontre des locaux"
+
+msgid "Boom Festival"
+msgstr "Boom Festival"
+
+msgid "What is the Boom?"
+msgstr "C'est quoi le Boom?"
+
+msgid "This is not my kind..."
+msgstr "C'est pas trop mon genre..."
+
+msgid "You're already there!"
+msgstr "Vous y êtes déjà!"
+
+msgid "Boom and Bike"
+msgstr "Boom et Vélo"
+
+msgid "A state of mind..."
+msgstr "Un état d'esprit..."
+
+msgid "... and common values!"
+msgstr "... et des valeurs communes"
+
+msgid "All in one !"
+msgstr "All in one !"
+
+msgid "Have questions? Need information?"
+msgstr "Des questions? Besoin d'informations?"
+
+msgid "Contact me at"
+msgstr "Contactez-moi sur"
+
+msgid "boom_bike_note"
+msgstr "Pour vous aider à aller au Boom Festival à vélo et en profiter le plus possible,"
+       " je réunis ici mes expériences de 2012 et de 2013 à travers la France, l’Espagne et le"
+       " Portugal."
+
+msgid ""
+msgstr "Le cyclotourisme c’est quoi ?"
+
+
+

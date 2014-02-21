@@ -1,0 +1,94 @@
+{% extends "info/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block head %}
+<title>Boom Bike ~ {% trans "What is bicycle touring?" %}</title>
+<script>
+    $(function() {
+        $(window).scroll(function() {
+            var window_scroll_top = $(window).scrollTop();
+            var window_height = $(window).height();
+            var document_height = $(document).height();
+
+            if(window_scroll_top + window_height > document_height - 180)
+                $("#next_article").css("visibility", "visible");
+            else
+                $("#next_article").css("visibility", "hidden");
+        });
+
+        $(window).scroll();
+    });
+</script>
+{% endblock %}
+
+{% block nav_bicycle_touring %}active{% endblock %}
+
+{% block content %}
+
+<div id="bicycle_touring_content" class="article_style">
+    <div id="article_title">
+
+        <!--p id="note">
+            {# trans "boom_bike_note" #}
+        </p-->
+
+        <h2 class="cyclotourism">
+            {% trans "Bicycle Touring" %}
+        </h2>
+    </div>
+    <div id="article_content">
+
+        <h3>
+            {% trans "What is bicycle touring?" %}
+        </h3>
+
+        <a href="{% static 'img/bike_ciudad_rodrigo.png' %}"
+           data-lightbox="bike_ciudad_rodrigo"
+           title="Ciudad Rodrigo (ES)"
+           class="small_img_link left_wrapped">
+            <img src="{% static 'img/bike_ciudad_rodrigo.png' %}" alt="Ciudad Rodrigo (ES)"
+             id="bike_ciudad_rodrigo">
+        </a>
+
+        {% trans "bicycle_touring" %}
+
+        <h3>
+            {% trans "... or bicycle trekking?" %}
+        </h3>
+        
+        <a href="{% static 'img/bike_sign_on_road.jpg' %}"
+           data-lightbox="bike_on_road"
+           class="small_img_link right_wrapped">
+            <img src="{% static 'img/bike_sign_on_road.jpg' %}" alt="Ciudad Rodrigo (ES)"
+             id="bike_sign_on_road">
+        </a>
+
+        {% trans "bicycle_trekking" %}
+        
+        <h3>
+            {% trans "A good way to get fitted!" %}
+        </h3>
+        {% trans "get_fitted" %}
+
+        <h3>
+            {% trans "Getting closer to locals" %}
+        </h3>
+        {% trans "closer_to_locals" %}
+
+        <hr>
+
+        <p class="bottom_link">
+            <img src="{% static 'img/spiral.png' %}" alt=">" class="img24">
+            {% trans "bicycle_touring_know_more" %}
+        </p>
+    </div>
+    
+    <a href="/boom_festival/" id="next_article">
+        <img src="{% static 'img/arrow_right.png' %}"
+             alt="{% trans 'Next' %} - {% trans 'Boom Festival' %}"
+             class="img48 article_nav next_article"
+             title="{% trans 'Next' %} - {% trans 'Boom Festival' %}">
+    </a>
+</div>
+{% endblock %}

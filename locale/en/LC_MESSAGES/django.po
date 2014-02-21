@@ -1,0 +1,187 @@
+# boom-bike.info en translation
+# Copyright (C) 2014
+# Quentin CARON <quentin.caron@gmail.com>, 2014
+
+#: templates/info/bicycle_touring.html:17
+msgid "Bicycle Touring"
+msgstr "Bicycle Touring"
+
+msgid "... or bicycle trekking?"
+msgstr "... or bicycle trekking?"
+
+msgid "A good way to get fitted!"
+msgstr "A good way to get fitted!"
+
+msgid "Getting closer to locals"
+msgstr "Getting closer to locals"
+
+msgid "Boom Festival"
+msgstr "Boom Festival"
+
+msgid "What is the Boom?"
+msgstr "What is the Boom?"
+
+msgid "This is not my kind..."
+msgstr "This is not my kind..."
+
+msgid "You're already there!"
+msgstr "You're already there!"
+
+msgid "Boom and Bike"
+msgstr "Boom and Bike"
+
+msgid "A state of mind..."
+msgstr "A state of mind..."
+
+msgid "... and common values!"
+msgstr "... and common values!"
+
+msgid "All in one !"
+msgstr "All in one !"
+
+msgid "Have questions? Need information?"
+msgstr "Have questions? Need information?"
+
+msgid "Contact me at"
+msgstr "Contact me at"
+
+msgid "boom_bike_note"
+msgstr "This website aims at helping you to cycle to the Boom Festival and to get the most out of"
+       " it possible. Here are summarized my 2012 and 2013 bike trips through France, Spain and" 
+       " Portugal to the Boom land."
+
+msgid "What is bicycle touring?"
+msgstr "What is bicycle touring?"
+
+msgid "bicycle_touring"
+msgstr "<p>Above all it is about tourism. So bicycle touring is travelling by bike out of our usual"
+       " everyday life environment. But here, cycling is much more than an activity and a way to"
+       " lift yourself: it is an open door to the world and it gets you closer to locals.</p>"
+       "<p>Choosing bicycle to travel also means accepting to move much slower than by car or by plane."
+       " Patience is required to slowly bike it to a remote area and spend the night there, then do it"
+       " again the next day. You will have plenty of time to appreciate everything that comes across the"
+       " path. It is an excellent opportunity to truly live and share simple moments of happiness.</p>"
+       "<p>Hanging around, having some physical exercise, feeling free, travelling eco-friendly… These all"
+       " describe well bicycle touring. But you know that it is nothing like shopping at the grocery"
+       " store at the corner of the street. It requires knowing where to sleep and how, what to eat or"
+       " cook, which route to take… Ultimately, it is more than making a simple list!</p><p></p>"
+
+msgid "bicycle_trekking"
+msgstr "<p>Trekking is a much closer to a pure physical activity than a touring trip. It usually is"
+       " an intense sport challenge which requires efforts done in a limited time frame (it"
+       " generally does not exceed a few days in a row). Thus, bicycle trekking is not to be"
+       " mistaken with bicycle touring: a good performance is usually expected contrary to the slow"
+       " travelling touring state of mind.</p>"
+       "<p>Trekkings difficulty justifies reliable and efficient gears, that is why bicycle tourers"
+       " can find loads of information and borrow most of the equipment used to practice this"
+       " activity. The main ones could be ultra-light tent, camping stove and orientation devices."
+       " If it is possible to get rid of such technicality, it makes every day more enjoyable by"
+       " allowing you to cook anywhere at any time or quickly find the right directions.</p>"
+       "<p>If there are a lot of logistic questions to be answered to plan a bike trip, cycle"
+       " tourers should also bring all the equipments required according to their route and their"
+       " own goals.</p>"
+
+msgid "get_fitted"
+msgstr "<p>It is well known that cycling is a physical activity which has many benefits, gives"
+       " stamina and improves tone. Moreover, anybody can enjoy it, no matter what age or what"
+       " physical fit. On top of that, there is no contraindication for this practice. No excuse!</p>"
+       "<p>Morphology is the only one element that is of great importance health problems. It has"
+       " huge impacts in choosing the right bike. It is also very important to adjust its elements"
+       " in order to avoid pains. Then, you can ride with confidence for months!</p>"
+
+msgid "closer_to_locals"
+msgstr "<p>Somehow, cycling is of a strange way to travel.<br>"
+       "Bikers generally create curiosity and admiration. Most of the time, the people met on the"
+       " road ask a lot of questions about the trip and personal motivations. They get stunned when"
+       " they see someone traveling that slowly by pedaling at this era. This allows bikers to ask"
+       " questions back and quench their thirst in turn.</p>"
+       "<p>Your bike and your smile are your best assets to meet others!</p>"
+
+msgid "bicycle_touring_know_more"
+msgstr "Get more information about bicycle touring and its history on "
+       "<a href=\"http://en.wikipedia.org/wiki/Bicycle_touring\" target=\"_blank\">Wikipedia's"
+       " dedicated article</a>."
+
+msgid "what_is_boom"
+msgstr "<p>The Boom is a festival taking place in Portugal every two years on the shores of"
+       " Idanha-a-Nova lake. It was created in 1997 and was first dedicated to trance psychedelic"
+       " music. Now, there are tens of thousands of people going to the festival.</p>"
+       "<p>2014 is the celebration of its 10th edition! It is a great success for this activist"
+       " festival which opened to other alternative cultures, ecology and art. Indeed, the Boom is"
+       " not just a band of artists who set the pace of the dancefloor: it is a place where one can"
+       " truly share opinions with others, dance for hours, listen to live conferences or even"
+       " practice yoga!</p>"
+
+msgid "boom_is_not_my_kind"
+msgstr "<p>During a whole week, more than a 100 nationalities gather up. Visitors get to know each"
+       " other and melt all together. This huge multicultural event generates bright memories, out"
+       " of the conventions and “good manners” defined by our society.</p>"
+       "<p>Let yourself flow into the amazing sceneries of this unique and magical landscape. The"
+       " Boom land lets the mind freely wander in peace with nature and fellow boomers. If you are"
+       " not a big fan of the music that is played, you should definitely find some kick-ass things"
+       " to do like chilling out at the beach or chatting at a live conference.</p>"
+       "<p>There are no VIP at the Boom. Everyone participates in its own way and lots of boomers"
+       " are first timers. You definitely have your place in this festival!</p>"
+
+msgid "already_there"
+msgstr "<p>You will discover true happiness and simplicity on the shores of the lake as well as on"
+       " dancefloors. This may be just like holidays… So if you imagine yourself enjoying the"
+       " sunshine this summer, maybe the Boom land is the right place!</p>"
+       "<p>Boomers live the festival during a week as well as before and way after. Boom generates"
+       " a true state of mind out of the epic experiences offered. Join us!</p>"
+
+msgid "boom_2012_official_film_title"
+msgstr "Boom Festival 2012 official film: The Alchemy of Spirit"
+
+msgid "boom_official_website_link"
+msgstr "Get more information, program and news on the"
+       " <a href=\"http://www.boomfestival.org\" target=\"blank\">Boom festival official website</a>."
+
+msgid "a_state_of_mind"
+msgstr "<p>The festival militates for eco-friendliness."
+       " Boomers’ waste and greenhouse gas emissions must be minimized to reduce as much as possible"
+       " the impacts on the local ecosystem as well as at a global scale.</p>"
+       "<p>We are all responsible for preserving both natural resources and nature’s prosperity."
+       " That is why the festival helps visitors in getting to the Boom land by bike. It is an"
+       " ideal way to participate and spread the word all around! </p>"
+
+msgid "common_values"
+msgstr "<p>Travelling by bike to the Boom Land is like depleting the body to free the mind. This"
+       " is experiencing another point of view which we usually reject according our capitalist"
+       " society of conditioned beings. With barriers vanishing, everyone can share the only true"
+       " valuable ever possessed: our existence, our experience as human being.</p>"
+       "<p>Humility, simplicity and generosity are some of the values celebrated by the Boom and"
+       " brought to light when cycling. They both help us to refocus and to find the right place in"
+       " this world. What could be better than doing this while having fun?</p>"
+
+msgid "all_in_one"
+msgstr "<p>We can make those values live long by all contributing in the Boom adventure. Let’s make"
+       " 2014 extraordinary! Let’s make the Boom shine bright! Let’s make it even better than it"
+       " already is!</p>"
+       "<p>Bicycle touring and Boom are pure joy and happiness.</p>"
+       "<p>Question beliefs. Let bad things flow. Let’s go!</p>"
+
+msgid "boom_2008_official_bike_video"
+msgstr "Boom Festival 2008 : Coming to Boom by Bike"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Previous"
+msgstr "Previous"
+
+msgid "boom_official_flickr_link"
+msgstr "No more words! Loads of <a href=\"http://www.flickr.com/photos/boomfestivalofficial/\""
+       " target=\"blank\">pictures of the Boom 2012</a>!"
+
+msgid "Information to bike it to the Boom Festival"
+msgstr "Information to bike it to the Boom Festival"
+
+msgid "Biking it the Boom Land, a great journey to Portugal"
+msgstr "Biking it the Boom Land, a great journey to Portugal"
+
+msgid "What is the Boom Festival?"
+msgstr "What is the Boom Festival?"
+
+#msgid ""
+#msgstr ""

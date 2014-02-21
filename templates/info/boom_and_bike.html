@@ -1,0 +1,73 @@
+{% extends "info/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block head %}
+<title>Boom Bike ~ {% trans "Biking it the Boom Land, a great journey to Portugal" %}</title>
+<script>
+    $(function() {
+        $(window).scroll(function() {
+            var window_scroll_top = $(window).scrollTop();
+            var window_height = $(window).height();
+            var document_height = $(document).height();
+
+            if(window_scroll_top + window_height > document_height - 180)
+                $("#previous_article").css("visibility", "visible");
+            else
+                $("#previous_article").css("visibility", "hidden");
+        });
+
+        $(window).scroll();
+    });
+</script>
+{% endblock %}
+
+{% block nav_boom_and_bike %}active{% endblock %}
+
+{% block content %}
+
+<div id="boom_and_bike_content" class="article_style">
+    <div id="article_title">
+        <h2 class="boom_and_bike">
+            {% trans "Boom and Bike" %}
+        </h2>
+    </div>
+    <div id="article_content">
+        <h3>
+            {% trans "A state of mind..." %}
+        </h3>
+        {% trans "a_state_of_mind" %}
+        
+        <p class="video_holder">
+            {% trans "boom_2008_official_bike_video" %}<br>
+            <iframe width="560" height="315" src="//www.youtube.com/embed/csxjz3I5uag"
+                    frameborder="0" allowfullscreen></iframe>
+        </p>
+
+        <h3>
+            {% trans "... and common values!" %}
+        </h3>
+        {% trans "common_values" %}
+        
+        <h3>
+            {% trans "All in one !" %}
+        </h3>
+        {% trans "all_in_one" %}
+
+        <hr>
+
+        <p class="bottom_link">
+            <img src="{% static 'img/spiral.png' %}" alt=">" class="img24">
+            {% trans "boom_official_flickr_link" %}
+        </p>
+
+    </div>
+
+    <a href="/boom_festival/" id="previous_article">
+        <img src="{% static 'img/arrow_left.png' %}"
+             alt="{% trans 'Previous' %} - {% trans 'Boom Festival' %}"
+             class="img48 article_nav previous_article"
+             title="{% trans 'Previous' %} - {% trans 'Boom Festival' %}">
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "info/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block head %}
+<title>Boom Bike ~ {% trans "What is the Boom Festival?" %}</title>
+<script>
+    $(function() {
+        $(window).scroll(function() {
+            var window_scroll_top = $(window).scrollTop();
+            var window_height = $(window).height();
+            var document_height = $(document).height();
+
+            if(window_scroll_top + window_height > document_height - 180) {
+                $("#next_article").css("visibility", "visible");
+                $("#previous_article").css("visibility", "visible");
+            }
+            else {
+                $("#next_article").css("visibility", "hidden");
+                $("#previous_article").css("visibility", "hidden");
+            }
+        });
+
+        $(window).scroll();
+    });
+</script>
+{% endblock %}
+
+{% block nav_boom_festival %}active{% endblock %}
+
+{% block content %}
+
+<div id="boom_festival_content" class="article_style">
+    <div id="article_title">
+        <h2 class="boom_festival">
+            {% trans "Boom Festival" %}
+        </h2>
+    </div>
+    <div id="article_content">
+        <h3>
+            {% trans "What is the Boom?" %}
+        </h3>
+        {% trans "what_is_boom" %}
+
+        <p class="video_holder">
+            {% trans "boom_2012_official_film_title" %}<br>
+            <iframe width="560" height="315" src="//www.youtube.com/embed/ZTrsenzgJCQ"
+                    frameborder="0" allowfullscreen></iframe>
+        </p>
+
+        <h3>
+            {% trans "This is not my kind..." %}
+        </h3>
+        {% trans "boom_is_not_my_kind" %}
+
+
+        <h3>
+            {% trans "You're already there!" %}
+        </h3>
+        {% trans "already_there" %}
+
+        <hr>
+
+        <p class="bottom_link">
+            <img src="{% static 'img/spiral.png' %}" alt=">" class="img24">
+            {% trans "boom_official_website_link" %}
+        </p>
+
+    </div>
+
+    <a href="/bicycle_touring/" id="previous_article">
+        <img src="{% static 'img/arrow_left.png' %}" alt="{% trans 'Previous' %} - {% trans 'Bicycle Touring' %}"
+             class="img48 article_nav previous_article" title="{% trans 'Previous' %} - {% trans 'Bicycle Touring' %}">
+    </a>
+
+    <a href="/boom_and_bike/" id="next_article">
+        <img src="{% static 'img/arrow_right.png' %}" alt="{% trans 'Next' %} - {% trans 'Boom and Bike' %}"
+             class="img48 article_nav next_article" title="{% trans 'Next' %} - {% trans 'Boom and Bike' %}">
+    </a>
+    
+</div>
+{% endblock %}
