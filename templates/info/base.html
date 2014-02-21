@@ -1,4 +1,6 @@
 {% load staticfiles %}
+{% load i18n %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +10,6 @@
         <!--[if IE]>
             <link rel="stylesheet" href="{% static 'css/ie_specifics.css' %}">
         <![endif]-->
-        <title>Boom Bike ~~~</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         <meta name="description"
@@ -23,6 +24,12 @@
         <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
         <script src="{% static 'js/mobile.js' %}"></script>
         <script src="{% static 'js/jquery.bpopup.min.js' %}"></script>
+        <script src="{% static 'js/jquery.bpopup.min.js' %}"></script>
+        <script src="{% static 'js/additional.js' %}"></script>
+
+        <!-- Lightbox image effects -->
+        <link href="{% static 'lightbox/css/lightbox.css' %}" rel="stylesheet" />
+        <script src="{% static 'lightbox/js/lightbox-2.6.min.js' %}"></script>
 
         <script>
             var static_url = "{% static '' %}";
@@ -46,13 +53,24 @@
     </head>
     <body>
         <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        <script>
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+            $(function() {
+                $("form#language_form select[name=language]").change(function() {
+                    $("form#language_form").submit();
+                });
+            });
+        </script>
+
         <header id="header" data-scroll="yes">
             <h1>
                 <a href="/">- Boom Bike -</a>
@@ -69,9 +87,43 @@
                 </a>
             </span>
         </header>
-        
-        {% block content %}
-        {% endblock %}
+
+        <div id="menu_container">
+            <div id="menu" class="ribbon">
+                <div class="left menu_item bicycle_touring_menu_item {% block nav_bicycle_touring %}{% endblock %}">
+                    <a href="/bicycle_touring/">{% trans "Bicycle Touring" %}</a>
+                </div>
+                <div class="left menu_item boom_festival_menu_item {% block nav_boom_festival %}{% endblock %}">
+                    <a href="/boom_festival/">{% trans "Boom Festival" %}</a>
+                </div>
+                <div class="left menu_item boom_and_bike_menu_item {% block nav_boom_and_bike %}{% endblock %}">
+                    <a href="/boom_and_bike/">{% trans "Boom and Bike" %}</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="language_div">
+            <form action="{% url 'set_language' %}" method="post" id="language_form">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}">
+
+                <select name="language">
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% for language in languages %}
+                    <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                        {{ language.name_local }} ({{ language.code }})
+                    </option>
+                {% endfor %}
+                </select>
+            </form>
+        </div>
+
+        <div id="main_content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    
         <footer id="footer" data-scroll="yes">
             <div>
                 <a href="#contact" id="popup_contact">
@@ -122,9 +174,9 @@
             <div class="contact_title">
                 <h2>Contact</h2>
             </div>
-            <p>Des questions? Besoin d'informations?</p>
+            <p>{% trans "Have questions? Need information?" %}</p>
             <p>
-                Contactez-moi sur
+                {% trans "Contact me at" %}
                 <a href="mailto:contact@boom-bike.info" target="_top">
                     contact@boom-bike.info
                 </a>

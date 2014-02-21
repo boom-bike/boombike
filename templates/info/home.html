@@ -1,7 +1,10 @@
 {% extends "info/base.html" %}
 {% load staticfiles %}
+{% load i18n %}
 
 {% block head %}
+    <title>Boom Bike ~ {% trans "Information to bike it to the Boom Festival" %}</title>
+
 <!--    <script src="{% static 'js/parallax.js' %}"></script>-->
     <script src="{% static 'js/links_scroll.js' %}"></script>
     
@@ -45,13 +48,18 @@
                  data-scroll="yes">
             <article>
                 <div class="article_content">
-                    <div class="title cyclotourism">Cyclotourisme</div>
+                    <div class="title cyclotourism">
+                        <a href="/bicycle_touring/">
+                            {% trans "Bicycle Touring" %}
+                        </a>
+                    </div>
                     <div class="content">
-                        ... ou cyclo-randonnée?
+                        {% trans "... or bicycle trekking?" %}
                         <br>
-                        Un bon moyen d'être en forme!
+
+                        {% trans "A good way to get fitted!" %}
                         <br>
-                        A la rencontre des locaux
+                        {% trans "Getting closer to locals" %}
                     </div>
                 </div>
             </article>
@@ -61,13 +69,17 @@
                  data-scroll="yes">
             <article>
                 <div class="article_content">
-                    <div class="title boom">Boom Festival</div>
+                    <div class="title boom">
+                        <a href="/boom_festival/">
+                            {% trans "Boom Festival" %}
+                        </a>
+                    </div>
                     <div class="content">
-                        C'est quoi le Boom?
+                        {% trans "What is the Boom?" %}
                         <br>
-                        C'est pas trop mon genre...
+                        {% trans "This is not my kind..." %}
                         <br>
-                        Vous y êtes déjà!
+                        {% trans "You're already there!" %}
                     </div>
                 </div>
             </article>
@@ -77,13 +89,17 @@
                  data-scroll="yes">
             <article>
                 <div class="article_content">
-                    <div class="title boom_and_bike">Boom et Vélo</div>
+                    <div class="title boom_and_bike">
+                        <a href="/boom_and_bike/">
+                            {% trans "Boom and Bike" %}
+                        </a>
+                    </div>
                     <div class="content">
-                        Un état d'esprit...
+                        {% trans "A state of mind..." %}
                         <br>
-                        ... et des valeurs communes
+                        {% trans "... and common values!" %}
                         <br>
-                        All in one !
+                        {% trans "All in one !" %}
                     </div>
                 </div>
             </article>

@@ -19,20 +19,28 @@ $(function() {
         var middle_section_coord = 0;
         var middle_window_coord = 0;
 
+        if ($("#next").css("visibility") !== "hidden" &
+            window_scroll_top + window_height > document_height - ($("#footer").height() / 2)) {
+
+            $("#next").css("visibility", "hidden");
+            $("#previous").parent()
+                .attr("href",
+                      "#" + $(scroll_contents[scroll_contents_length-2]).attr("id"));
+
+            return;
+        }
+
+        else if (window_scroll_top + window_height > document_height - ($("#footer").height() / 2)) {
+            return;
+        }
+
         for (var i=0; i < scroll_contents_length; i++) {
 
             middle_section_coord = $(scroll_contents[i]).offset().top +
                                    ($(scroll_contents[i]).height()/2);
             middle_window_coord = window_scroll_top + window_height;
 
-            if (document_height == middle_window_coord) {
-                $("#next").css("visibility", "hidden");
-                $("#previous").parent()
-                    .attr("href",
-                          "#" + $(scroll_contents[scroll_contents_length-2]).attr("id"));
-            }
-
-            else if (middle_section_coord < middle_window_coord &&
+            if (middle_section_coord < middle_window_coord &&
                 middle_section_coord > window_scroll_top) {
                 current_section = '#' + $(scroll_contents[i]).attr("id");
 
