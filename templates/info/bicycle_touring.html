@@ -4,6 +4,9 @@
 
 {% block head %}
 <title>Boom Bike ~ {% trans "What is bicycle touring?" %}</title>
+<meta name="description"
+      content="{% trans 'bicycle_touring_meta_description' %}">
+
 <script>
     $(function() {
         $(window).scroll(function() {
@@ -67,7 +70,7 @@
         {% trans "bicycle_trekking" %}
         
         <h3>
-            {% trans "A good way to get fitted!" %}
+            {% trans "A good way to get fit!" %}
         </h3>
         {% trans "get_fitted" %}
 

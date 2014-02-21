@@ -9,8 +9,8 @@ msgstr "Bicycle Touring"
 msgid "... or bicycle trekking?"
 msgstr "... or bicycle trekking?"
 
-msgid "A good way to get fitted!"
-msgstr "A good way to get fitted!"
+msgid "A good way to get fit!"
+msgstr "A good way to get fit!"
 
 msgid "Getting closer to locals"
 msgstr "Getting closer to locals"
@@ -182,6 +182,22 @@ msgstr "Biking it the Boom Land, a great journey to Portugal"
 
 msgid "What is the Boom Festival?"
 msgstr "What is the Boom Festival?"
+
+msgid "home_meta_description"
+msgstr "Get information about accommodation, gears or climate to bike it to the Boom Land in"
+       " Portugal (Idanha-a-Nova)"
+
+msgid "bicycle_touring_meta_description"
+msgstr "Bicycle touring is not bicycle trekking. Travelling slowly, enjoying nature, getting close"
+       " to locals, this is bicycle touring!"
+
+msgid "boom_festival_meta_description"
+msgstr "The Boom Festival is mainly about psychedelic trance music but has opened to other kind of"
+       " musics and arts. Everybody should find some very interesting things to do on the Boom land!"
+
+msgid "boom_and_bike_meta_description"
+msgstr "Discover why Boom and bike are perfect together. Get in the peaceful mood of an open-minded"
+       " state of mind."
 
 #msgid ""
 #msgstr ""
