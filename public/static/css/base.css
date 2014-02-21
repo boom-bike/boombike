@@ -112,22 +112,76 @@ div.title a {
     text-shadow: 1px 1px 0 #FFFFFF;
 }
 
-div.cyclotourism a,
-div.details div a.cyclotourism
+div.cyclotourism a:link,
+div.details div a.cyclotourism:link
 {
     color: #80D080;
 }
 
-div.boom a,
-div.details div a
+div.cyclotourism a:visited,
+div.details div a.cyclotourism:visited
+{
+    color: #80D080;
+}
+
+div.cyclotourism a:hover,
+div.details div a.cyclotourism:hover
+{
+    color: #A0E6A0;
+}
+
+div.cyclotourism a:active,
+div.details div a.cyclotourism:active
+{
+    color: #A0E6A0;
+}
+
+div.boom a:link,
+div.details div a.boom:link
 {
     color: #7070FF;
 }
 
-div.boom_and_bike a,
-div.details div a.boom_and_bike
+div.boom a:visited,
+div.details div a.boom:visited
+{
+    color: #7070FF;
+}
+
+div.boom a:hover,
+div.details div a.boom:hover
+{
+    color: #9090FF;
+}
+
+div.boom a:active,
+div.details div a.boom:active
+{
+    color: #9090FF;
+}
+
+div.boom_and_bike a:link,
+div.details div a.boom_and_bike:link
 {
     color: #FF4545;
+}
+
+div.boom_and_bike a:visited,
+div.details div a.boom_and_bike:visited
+{
+    color: #FF4545;
+}
+
+div.boom_and_bike a:hover,
+div.details div a.boom_and_bike:hover
+{
+    color: #FF6565;
+}
+
+div.boom_and_bike a:active,
+div.details div a.boom_and_bike:active
+{
+    color: #FF6565;
 }
 
 div.content {
@@ -261,6 +315,20 @@ h1 a, h2 a {
   src: local('MontserratSubrayada-Regular'), url(/static/fonts/MontserratSubrayada.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('MontserratSubrayada-Regular'), url(/static/fonts/IstokWeb.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(/static/fonts/RobotoSlab.woff) format('woff');
+}
+
 .arrow {
     width: 24px;
     height: 24px;
@@ -320,7 +388,7 @@ img.nav {
 }
 
 a.small_img_link {
-    border: 4px solid #5e5e5e;
+    border: 3px solid #5e5e5e;
     
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -333,14 +401,14 @@ a.small_img_link {
     -o-transition: all 0.1s ease-out;
     transition: all 0.1s ease-out;
 
-    margin-left: 20px;
-    margin-top: 15px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 13px;
+    margin-right: 30px;
     line-height: 0;
 }
 
 a.small_img_link:hover {
-    border: 4px solid #00bfa8;
+    border: 3px solid #00bfa8;
 }
 
 a.left_wrapped {
@@ -352,13 +420,13 @@ a.right_wrapped {
 }
 
 img#bike_ciudad_rodrigo {
-    width: 230px;
-    height: 354px;
+    width: 156px;
+    height: 240px;
 }
 
 img#bike_sign_on_road {
-    width: 280px;
-    height: 187px;
+    width: 220px;
+    height: 147px;
 }
 
 /* Modal */
@@ -368,6 +436,8 @@ img#bike_sign_on_road {
 
 .popup {
     background-color: #FAFAFA;
+
+    border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     -khtml-border-radius: 10px 10px 10px 10px;
@@ -501,8 +571,8 @@ div.article_style {
 }
 
 div.article_style p {
-    font-family: Bad Script;
-    font-size: 19px;
+    font-family: Roboto Slab;
+    font-size: 14px;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -513,6 +583,33 @@ div.article_style p {
 
     background-color: #F0F0F0;
 }
+
+div.article_style p.bottom_link {
+    font-size: 12px;
+    padding-bottom: 18px;
+}
+
+div.article_style p.bottom_link img {
+    margin-bottom: -6px;
+    margin-right: 10px;
+}
+
+div.article_style p.bottom_link a:link { /* unvisited link */
+    font-size: 14px;
+    color: #A02020;
+}
+
+div.article_style p.bottom_link a:visited { /* visited link */
+    color: #A02020;
+}
+
+div.article_style p.bottom_link a:hover { /* mouse over link */
+    color: #E02020;
+}
+
+div.article_style p.bottom_link a:active { /* selected link */
+    color: #F04040;
+}  
 
 div#main_content h2.cyclotourism,
 div#main_content h2.boom_festival,
@@ -579,11 +676,18 @@ div#language_div {
 
 form#language_form select {
    background: transparent;
+   -moz-appearance: none;
+   text-indent: 0.01px;
+    text-overflow: '';
+    color: #000000;
+
    width: 120px;
    padding: 5px;
    font-size: 16px;
    border: 0;
    height: 34px;
+
+   cursor: pointer;
 }
 
 img.article_nav {
