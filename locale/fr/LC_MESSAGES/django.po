@@ -9,7 +9,7 @@ msgstr "Cyclotourisme"
 msgid "... or bicycle trekking?"
 msgstr "... ou cyclo-randonnée?"
 
-msgid "A good way to get fitted!"
+msgid "A good way to get fit!"
 msgstr "Un bon moyen d'être en forme!"
 
 msgid "Getting closer to locals"
