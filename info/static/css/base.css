@@ -663,6 +663,11 @@ div#article_content p.video_holder {
     text-align: center;
 }
 
+div#article_content p.video_holder iframe {
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+
 div#article_content hr {
     margin: 0;
 }
