@@ -1,5 +1,6 @@
 {% load staticfiles %}
 {% load i18n %}
+{% load info_extras %}
 
 <!DOCTYPE html>
 <html>
@@ -63,6 +64,11 @@
         <script>
             $(function() {
                 $("form#language_form select[name=language]").change(function() {
+                    var next = $("form#language_form select[name=language]")
+                        .find(":selected").data("next");
+
+                    $("form#language_form input[name=next]").val(next);
+
                     $("form#language_form").submit();
                 });
             });
@@ -88,13 +94,13 @@
         <div id="menu_container">
             <div id="menu" class="ribbon">
                 <div class="left menu_item bicycle_touring_menu_item {% block nav_bicycle_touring %}{% endblock %}">
-                    <a href="/bicycle_touring/">{% trans "Bicycle Touring" %}</a>
+                    <a href="{% url 'bicycle-touring' %}">{% trans "Bicycle Touring" %}</a>
                 </div>
                 <div class="left menu_item boom_festival_menu_item {% block nav_boom_festival %}{% endblock %}">
-                    <a href="/boom_festival/">{% trans "Boom Festival" %}</a>
+                    <a href="{% url 'boom-festival' %}">{% trans "Boom Festival" %}</a>
                 </div>
                 <div class="left menu_item boom_and_bike_menu_item {% block nav_boom_and_bike %}{% endblock %}">
-                    <a href="/boom_and_bike/">{% trans "Boom and Bike" %}</a>
+                    <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -108,7 +114,10 @@
                 <select name="language">
                 {% get_language_info_list for LANGUAGES as languages %}
                 {% for language in languages %}
-                    <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                    <option 
+                        value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}
+                        data-next="{% change_lang language.code %}"
+                        >
                         {{ language.name_local }} ({{ language.code }})
                     </option>
                 {% endfor %}

@@ -71,12 +71,12 @@
 
     </div>
 
-    <a href="/bicycle_touring/" id="previous_article">
+    <a href="{% url 'bicycle-touring' %}" id="previous_article">
         <img src="{% static 'img/arrow_left.png' %}" alt="{% trans 'Previous' %} - {% trans 'Bicycle Touring' %}"
              class="img48 article_nav previous_article" title="{% trans 'Previous' %} - {% trans 'Bicycle Touring' %}">
     </a>
 
-    <a href="/boom_and_bike/" id="next_article">
+    <a href="{% url 'boom-and-bike' %}" id="next_article">
         <img src="{% static 'img/arrow_right.png' %}" alt="{% trans 'Next' %} - {% trans 'Boom and Bike' %}"
              class="img48 article_nav next_article" title="{% trans 'Next' %} - {% trans 'Boom and Bike' %}">
     </a>
