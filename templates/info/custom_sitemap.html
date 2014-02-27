@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+{% spaceless %}
+{% load i18n %}
+{% load info_extras %}
+{% get_language_info_list for LANGUAGES as languages %}
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% for url in urlset %}
+    {# url in the user preferred language #}
+    <url>
+        <loc>{{ url.location }}</loc>
+        {% if url.lastmod %}<lastmod>{{ url.lastmod|date:"Y-m-d" }}</lastmod>{% endif %}
+        {% if url.changefreq %}<changefreq>{{ url.changefreq }}</changefreq>{% endif %}
+        {% if url.priority %}<priority>{{ url.priority }}</priority>{% endif %}
+        {% for language in languages %}
+            {% language language.code %}
+                <xhtml:link
+                    rel="alternate"
+                    hreflang="{{ language.code }}"
+                    href="{% translate_url url.item %}"/>
+            {% endlanguage %}
+        {% endfor %}
+    </url>
+{% endfor %}
+{% endspaceless %}
+</urlset>

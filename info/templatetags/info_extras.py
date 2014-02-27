@@ -14,16 +14,31 @@ def change_lang(context, lang=None, *args, **kwargs):
     Get active page's url by a specified language
     Usage: {% change_lang 'en' %}
     """
-    print context
     path = context['request'].path
-    url_parts = resolve( path )
+    url_parts = resolve(path)
 
     url = path
     cur_language = get_language()
     try:
         activate(lang)
-        url = reverse( url_parts.view_name, kwargs=url_parts.kwargs )
+        url = reverse(url_parts.view_name, kwargs=url_parts.kwargs)
     finally:
         activate(cur_language)
 
     return "%s" % url
+
+@register.simple_tag(takes_context=True)
+def translate_url(context, view_name, *args, **kwargs):
+    """
+    Get active page's url by a specified language
+    Usage: {% change_lang 'en' %}
+    """
+    return context['request'].build_absolute_uri(reverse(view_name))
+
+
+@register.simple_tag
+def classname(obj):
+    print "Object class:", obj.__class__.__name__
+    print "Object dir:", dir(obj)
+    print obj
+    return True
