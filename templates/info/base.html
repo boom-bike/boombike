@@ -58,8 +58,6 @@
 
         </script>
 
-        <meta name="msvalidate.01" content="A2C5B8DEE608968108AF9FC703F8AED7" />
-
         {% block head %}
         {% endblock %}
     </head>
@@ -145,7 +143,26 @@
         </div>
     
         <footer id="footer" data-scroll="yes">
-            <div>
+            <div id="sitemap">
+                <div class="left sitemap_col">
+                    <h4>Boom-bike</h4>
+                    <hr class="footer_hr">
+                    <a href="{% url 'home' %}">{% trans "Home" %}</a><br>
+                    <a href="{% url 'bicycle-touring' %}">{% trans "Bicycle Touring" %}</a><br>
+                    <a href="{% url 'boom-festival' %}">{% trans "Boom Festival" %}</a><br>
+                    <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a>
+                </div>
+                <div class="left sitemap_col">
+                    <h4>{% trans "Follow us" %}</h4>
+                    <hr class="footer_hr">
+                    <a href="https://www.facebook.com/boombike.info" target="_blank">Facebook</a><br>
+                    <a href="https://twitter.com/boom_bike_info" target="_blank">Twitter</a><br>
+                    <a href="https://plus.google.com/110868265478762489436" target="_blank">Google +</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <hr class="footer_hr section_sep">
+            <div id="other">
                 <a href="#contact" id="popup_contact">
                     <img src="{% static 'img/email.png' %}" alt="email" class="img64 contact">
                 </a>

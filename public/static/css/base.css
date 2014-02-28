@@ -235,11 +235,11 @@ div#home_nav {
  */
 
 footer {
-    display: table;
+/*    display: table;
     position: relative;
     width: 100%;
     height: 80px;
-    text-align: center;
+    text-align: center;*/
     background-color: #A15050;
 
     box-shadow: inset -1px 5px 20px -5px #000000;
@@ -251,10 +251,27 @@ footer {
 }
 
 footer div {
-    display: table-cell;
-    vertical-align: middle;
+/*    display: table-cell;
+    vertical-align: middle;*/
 }
 
+footer hr.footer_hr {
+    border: 1px solid #904040;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom: 1px solid #AF6665;
+}
+
+footer hr.section_sep {
+    width: 95%;
+}
+
+footer h4 {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 hr.title_underline {
     color: #f00;
@@ -801,4 +818,50 @@ div.boom_and_bike_menu_item a:active { color: #D53030; }  /* selected link */
 
 div#menu div.active {
     border-bottom: 3px solid #A15050;
+}
+
+/* Sitemap */
+div#sitemap {
+    width: 320px;
+    margin: 0 auto;
+}
+
+div#sitemap div {
+    width: 140px;
+}
+
+div.sitemap_col {
+    padding-top: 28px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div#sitemap div.sitemap_col h4 {
+    font-family: Roboto Slab;
+}
+
+div#sitemap div.sitemap_col a {
+    font-family: Roboto Slab;
+}
+
+div.sitemap_col a:link { color: #000000; }      /* unvisited link */
+div.sitemap_col a:visited { color: #000000; }  /* visited link */
+div.sitemap_col a:hover { color: #80D080; }  /* mouse over link */
+div.sitemap_col a:active { color: #55B955; }  /* selected link */
+
+div.sitemap_col a {
+    font-size: 12px;
+}
+
+div#other {
+/*    border-top: 1px solid black;*/
+    width: 64px;
+    margin: 0 auto;
+}
+
+/* Youtube */
+iframe.youtube {
+    width: 560px;
+    height: 315px;
 }
