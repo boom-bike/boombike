@@ -851,7 +851,7 @@ div.sitemap_col a:hover { color: #80D080; }  /* mouse over link */
 div.sitemap_col a:active { color: #55B955; }  /* selected link */
 
 div.sitemap_col a {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 div#other {
