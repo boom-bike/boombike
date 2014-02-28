@@ -199,6 +199,9 @@ msgid "boom_and_bike_meta_description"
 msgstr "Discover why Boom and bike are perfect together. Get in the peaceful mood of an open-minded"
        " state of mind."
 
+msgid "Follow us"
+msgstr "Follow us"
+
 # # # # #
 # URLS  #
 # # # # #
