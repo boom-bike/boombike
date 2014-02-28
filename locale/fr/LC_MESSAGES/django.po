@@ -86,7 +86,7 @@ msgstr "<p>La cyclo-randonnée relève bien plus de la performance physique que 
        " direction.</p>"
        "<p>De nombreuses questions d’ordre logistique se pose au cyclotouriste qui ne devra pas"
        " seulement préparer chaque étape de son voyage mais aussi emmener tout le matériel adapté à"
-       " ce dernier.<p/>"
+       " ce dernier.</p>"
 
 msgid "get_fitted"
 msgstr "<p>C’est bien connu, le vélo nous fait du bien car c’est une activité physique qui demande"
