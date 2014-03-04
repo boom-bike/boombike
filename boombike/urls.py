@@ -31,5 +31,3 @@ urlpatterns += i18n_patterns('',
     url(_(r'^boom-festival$'), 'info.views.boom_festival', name='boom-festival'),
     url(_(r'^boom-and-bike$'), 'info.views.boom_and_bike', name='boom-and-bike'),
 )
-
-#handler404 = 'boombike.views.handler404'
