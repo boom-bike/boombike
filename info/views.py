@@ -16,3 +16,5 @@ def boom_festival(request, template='info/boom_festival.html'):
 def boom_and_bike(request, template='info/boom_and_bike.html'):
     return render(request, template, {})
 
+#def handler404(request):
+#    return render(request, '404.html')

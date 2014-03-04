@@ -221,6 +221,13 @@ msgstr "Découvrez pourquoi Boom et vélo s'allient parfaitement. Imprégnez-vou
 msgid "Follow us"
 msgstr "Suivez-nous"
 
+msgid "This page does not exist"
+msgstr "Cette page n'existe pas"
+
+msgid "Unfortunately the requested page does not exist. Go to the"
+msgstr "Malheureusement la page que vous demandez n'existe pas.<br>Aller à l'"
+
+
 # # # # #
 # URLS  #
 # # # # #
