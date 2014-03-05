@@ -9,13 +9,8 @@
         <h2>{% trans 'This page does not exist' %}</h2>
     </div>
     <div id="article_content">
-        <div class="left">
-            <img src="{% static 'img/error.png' %}" alt="{% trans 'Error' %}" class="img64">
-        </div>
-        <div class="left">
-            <p>{% trans 'The requested page could not be found.' %}</p>
-        </div>
-        <div class="clear"></div>
+        <img src="{% static 'img/error.png' %}" alt="{% trans 'Error' %}" class="img64 left">
+        <p>{% trans 'The requested page could not be found.' %}</p>
     </div>
 </div>
 {% endblock %}
