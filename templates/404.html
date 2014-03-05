@@ -1,3 +1,15 @@
-404 ERROR
-<br>
-<a href="/">Home</a>
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load staticfiles %}
+
+{% block content %}
+    <h2>{% trans 'This page does not exist' %}</h2>
+    <div class="left">
+        <img src="{% static 'img/error.png' %}" alt="{% trans 'Error' %}" class="img64">
+    </div>
+    <div class="left">
+        <p>{% trans 'The requested page could not be found.' %}</p>
+    </div>
+
+{% endblock %}

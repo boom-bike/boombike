@@ -1,0 +1,207 @@
+<!-- No language here, it produces an error without a real context -->
+{% load staticfiles %}
+{% load i18n %}
+{% load info_extras %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!--[if IE]>
+            <link rel="stylesheet" href="{% static 'css/ie_specifics.css' %}">
+        <![endif]-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="author" content="Quentin CARON">
+
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" media="(max-width: 800px)" href="{% static 'css/mobile.css' %}">
+        <link rel="icon" type="image/png" href="{% static 'img/bicycle_16x16_favicon.png' %}">
+        
+        <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+        <script src="{% static 'js/mobile.js' %}"></script>
+        <script src="{% static 'js/jquery.bpopup.min.js' %}"></script>
+        <script src="{% static 'js/jquery.bpopup.min.js' %}"></script>
+        <script src="{% static 'js/additional.js' %}"></script>
+
+        <!-- Lightbox image effects -->
+        <link href="{% static 'lightbox/css/lightbox.css' %}" rel="stylesheet" />
+        <script src="{% static 'lightbox/js/lightbox-2.6.min.js' %}"></script>
+
+        <script>
+            var static_url = "{% static '' %}";
+            
+            $(function() {
+                $('span.share').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#share').bPopup();
+                });
+                
+                $('a#popup_contact').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#contact').bPopup();
+                });
+            });
+        </script>
+
+        <!-- GA tracking -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-48361394-1', 'boom-bike.info');
+          ga('send', 'pageview');
+
+        </script>
+
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <header id="header" data-scroll="yes">
+            <h1>
+                <a href="/">- Boom Bike -</a>
+            </h1>
+            <span class="share">
+                <a href="#share">
+                    <img src="{% static 'img/facebook.png' %}" alt="Accueil" class="img48 share">
+                </a>
+                <a href="#share">
+                    <img src="{% static 'img/twitter.png' %}" alt="Accueil" class="img48 share">
+                </a>
+                <a href="#share">
+                    <img src="{% static 'img/google_plus.png' %}" alt="Accueil" class="img48 share">
+                </a>
+            </span>
+        </header>
+
+        <div id="menu_container">
+            <div id="menu" class="ribbon">
+                <div class="left menu_item bicycle_touring_menu_item {% block nav_bicycle_touring %}{% endblock %}">
+                    <a href="{% url 'bicycle-touring' %}">{% trans "Bicycle Touring" %}</a>
+                </div>
+                <div class="left menu_item boom_festival_menu_item {% block nav_boom_festival %}{% endblock %}">
+                    <a href="{% url 'boom-festival' %}">{% trans "Boom Festival" %}</a>
+                </div>
+                <div class="left menu_item boom_and_bike_menu_item {% block nav_boom_and_bike %}{% endblock %}">
+                    <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="main_content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    
+        <footer id="footer" data-scroll="yes">
+            <div id="sitemap">
+                <div class="left sitemap_col">
+                    <h4>Boom-bike</h4>
+                    <hr class="footer_hr">
+                    <a href="{% url 'home' %}">{% trans "Home" %}</a><br>
+                    <a href="{% url 'bicycle-touring' %}">{% trans "Bicycle Touring" %}</a><br>
+                    <a href="{% url 'boom-festival' %}">{% trans "Boom Festival" %}</a><br>
+                    <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a>
+                </div>
+                <div class="left sitemap_col">
+                    <h4>{% trans "Follow us" %}</h4>
+                    <hr class="footer_hr">
+                    <a href="https://www.facebook.com/boombike.info" target="_blank">Facebook</a><br>
+                    <a href="https://twitter.com/boom_bike_info" target="_blank">Twitter</a><br>
+                    <a href="https://plus.google.com/110868265478762489436" target="_blank">Google +</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <hr class="footer_hr section_sep">
+            <div id="other">
+                <a href="#contact" id="popup_contact">
+                    <img src="{% static 'img/email.png' %}" alt="email" class="img64 contact">
+                </a>
+            </div>
+        </footer>
+
+        <div id="share" class="popup">
+            <span class="button b-close">
+                <span>X</span>
+            </span>
+            
+            <div class="share_title">
+                <h2>Share me all night long...</h2>
+            </div>
+            <div class="left share_column">
+                <h3>Facebook</h3>
+                <div class="fb-share-button"
+                     data-href="http://boom-bike.info"
+                     data-width="200"
+                     data-type="box_count"></div>
+            </div>
+
+            <div class="left share_column">
+                <h3>Twitter</h3>
+                <a href="https://twitter.com/share" class="twitter-share-button"
+                   data-url="http://boom-bike.info"
+                   data-text="Cycle it to Boom" data-via="boom_bike_info"
+                   data-lang="fr" data-size="large">Tweeter</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+
+            <div class="left share_column">
+                <h3>Google +</h3>
+                <div class="g-plus" data-action="share" data-href="http://boom-bike.info"
+                     data-annotation="vertical-bubble"></div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <div id="contact" class="popup">
+            <span class="button b-close">
+                <span>X</span>
+            </span>
+
+            <div class="contact_title">
+                <h2>Contact</h2>
+            </div>
+            <p>{% trans "Have questions? Need information?" %}</p>
+            <p>
+                {% trans "Contact me at" %}
+                <a href="mailto:contact@boom-bike.info" target="_top">
+                    contact@boom-bike.info
+                </a>
+            </p>
+        </div>
+
+        <!-- Google + async -->
+        <script type="text/javascript">
+          window.___gcfg = {
+              lang: 'fr'
+          };
+
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+
+    </body>
+</html>

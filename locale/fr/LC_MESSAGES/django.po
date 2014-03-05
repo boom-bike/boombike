@@ -224,9 +224,11 @@ msgstr "Suivez-nous"
 msgid "This page does not exist"
 msgstr "Cette page n'existe pas"
 
-msgid "Unfortunately the requested page does not exist. Go to the"
-msgstr "Malheureusement la page que vous demandez n'existe pas.<br>Aller à l'"
+msgid "Error"
+msgstr "Erreur"
 
+msgid "The requested page could not be found."
+msgstr "La page demandée n'a pas pu être trouvée."
 
 # # # # #
 # URLS  #

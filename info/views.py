@@ -15,3 +15,8 @@ def boom_festival(request, template='info/boom_festival.html'):
 
 def boom_and_bike(request, template='info/boom_and_bike.html'):
     return render(request, template, {})
+
+def page_not_found(request, template='404.html'):
+    response = render(request, template)
+    response.status_code = 404
+    return response
