@@ -664,6 +664,11 @@ div#article_title {
     text-align: center;
 }
 
+p.error {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 div#article_content h3 {
     font-family: Roboto Slab;
     font-weight: normal;
