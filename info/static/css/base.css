@@ -601,6 +601,12 @@ div.article_style p {
     background-color: #F0F0F0;
 }
 
+
+div.article_style p.error {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 div.article_style p.bottom_link {
     font-size: 12px;
     padding-bottom: 18px;
@@ -662,11 +668,6 @@ div#main_content h2 {
 div#article_title {
     background-color: #505959;
     text-align: center;
-}
-
-p.error {
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 div#article_content h3 {
