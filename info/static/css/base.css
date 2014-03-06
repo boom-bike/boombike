@@ -601,10 +601,19 @@ div.article_style p {
     background-color: #F0F0F0;
 }
 
+div#error_div {
+    text-align: center;
+    background-color: #F0F0F0;
+}
 
-div.article_style p.error {
+img.error {
+    padding-top: 10px
+}
+
+div#article_content p.error {
     padding-top: 25px;
     padding-bottom: 25px;
+/*    padding-left: 80px;*/
 }
 
 div.article_style p.bottom_link {
