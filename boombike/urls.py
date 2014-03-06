@@ -12,6 +12,7 @@ sitemaps = {
 }
 
 urlpatterns = patterns('',
+#    url(r'^404$', 'info.views.page_not_found', name='page_not_found'),
     # Translation
     (r'^i18n/', include('django.conf.urls.i18n')),
     (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {
