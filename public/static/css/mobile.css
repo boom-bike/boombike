@@ -14,8 +14,30 @@ div.content {
     font-size: 5vw;
 }
 
+div.article_style {
+    width: 100%;
+}
+
+div.article_style p {
+    font-size: 11px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+div.article_style p.bottom_link {
+    font-size: 11px;
+    padding-bottom: 12px;
+}
+
+div.article_style p.bottom_link a:link { /* unvisited link */
+    font-size: 12px;
+}
+
 div.article_content {
-    width: 70%;
+    width: 100%;
 }
 
 img.share, img.contact {
@@ -23,20 +45,55 @@ img.share, img.contact {
     height: 32px;
 }
 
-header, footer {
+header {
     height: 100px;
 }
 
-footer {
-    height: 60px;
-}
-
 header h1 {
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 37px;
 }
 
-iframe.youtube {
+p.video_holder iframe {
     width: 280px;
     height: 163px;
+}
+
+/* Menu */
+div#menu {
+    width: 255px;
+}
+
+img.next_article {
+    display: none;
+}
+
+div.menu_item {
+    width: 75px;
+}
+
+.ribbon {
+    font-size: 10px !important;
+    padding: 0.5em 1em;
+    margin: 1em auto 2em;
+}
+
+img.previous_article {
+    display: none;
+}
+
+div#language_div {
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+span.share {
+    right: 11px;
+}
+
+div#main_content h2.cyclotourism,
+div#main_content h2.boom_festival,
+div#main_content h2.boom_and_bike {
+    font-size: 42px;
 }

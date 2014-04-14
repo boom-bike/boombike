@@ -1,0 +1,56 @@
+/* 
+    Document   : mobile
+    Created on : 9 nov. 2013, 13:22:09
+    Author     : Quentin CARON
+    Description:
+        Nice display on mobiles using CSS media queries.
+*/
+
+div.article_style {
+    width: 90%;
+}
+
+div.article_content {
+    width: 100%;
+}
+
+div.title {
+    font-size: 10vw;
+}
+
+div.content {
+    font-size: 5vw;
+}
+
+img.share, img.contact {
+    width: 32px;
+    height: 32px;
+}
+
+header {
+    height: 100px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-top: 37px;
+}
+
+p.video_holder iframe {
+    width: 356px;
+    height: 200px;
+}
+
+
+/* Menu */
+div#menu {
+    width: 390px;
+}
+
+div.menu_item {
+    width: 120px;
+}
+
+.ribbon {
+    font-size: 14px !important;
+}

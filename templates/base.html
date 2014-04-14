@@ -19,7 +19,12 @@
         <meta name="author" content="Quentin CARON">
 
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link rel="stylesheet" media="(max-width: 800px)" href="{% static 'css/mobile.css' %}">
+        <link rel="stylesheet" 
+              media="only screen and (min-device-width : 768px) and (max-device-width : 1024px)"
+              href="{% static 'css/tablet.css' %}">
+        <link rel="stylesheet" 
+              media="only screen and (min-device-width : 320px) and (max-device-width : 480px)"
+              href="{% static 'css/mobile.css' %}">
         <link rel="icon" type="image/png" href="{% static 'img/bicycle_16x16_favicon.png' %}">
         
         <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
