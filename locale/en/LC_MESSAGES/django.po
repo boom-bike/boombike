@@ -10,10 +10,10 @@ msgid "... or bicycle trekking?"
 msgstr "... or bicycle trekking?"
 
 msgid "A good way to get fit!"
-msgstr "A good way to get fit!"
+msgstr "A great way to get into shape!"
 
 msgid "Getting closer to locals"
-msgstr "Getting closer to locals"
+msgstr "Meet the locals"
 
 msgid "Boom Festival"
 msgstr "Boom Festival"
@@ -22,7 +22,7 @@ msgid "What is the Boom?"
 msgstr "What is the Boom?"
 
 msgid "This is not my kind..."
-msgstr "This is not my kind..."
+msgstr "It's is not my kind of thing..."
 
 msgid "You're already there!"
 msgstr "You're already there!"
