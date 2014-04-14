@@ -24,6 +24,9 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
      url(r'^admin/', include(admin.site.urls)),
+
+     # Albums
+     url(_(r'^albums$'), 'info.views.albums', name='albums'),
 )
 
 urlpatterns += i18n_patterns('',
