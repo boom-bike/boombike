@@ -230,6 +230,34 @@ msgstr "Erreur"
 msgid "The requested page could not be found."
 msgstr "La page demandée n'a pas pu être trouvée."
 
+msgid "Get there"
+msgstr "Nous rejoindre"
+
+msgid "Boom Land Location"
+msgstr "Localisation du festival"
+
+msgid "How far is the Boom Land?"
+msgstr "Le Boom, c'est loin?"
+
+msgid "Get my position"
+msgstr "Obtenir ma position"
+
+msgid "Get route to the Boom Land"
+msgstr "Tracer la route vers le Boom"
+
+msgid "or start from"
+msgstr "ou démarrer depuis"
+
+msgid "another city"
+msgstr "une autre ville"
+
+msgid "Distance by car"
+msgstr "Distance en voiture"
+
+msgid "Estimated distance by bike"
+msgstr "Distance estimée en vélo"
+
+
 # # # # #
 # URLS  #
 # # # # #
@@ -242,3 +270,6 @@ msgstr "^boom-festival$"
 
 msgid "^boom-and-bike$"
 msgstr "^boom-et-velo$"
+
+msgid "^get-there$"
+msgstr "^se-rendre-au-festival$"

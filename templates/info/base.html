@@ -31,7 +31,6 @@
         <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
         <script src="{% static 'js/mobile.js' %}"></script>
         <script src="{% static 'js/jquery.bpopup.min.js' %}"></script>
-        <script src="{% static 'js/jquery.bpopup.min.js' %}"></script>
         <script src="{% static 'js/additional.js' %}"></script>
 
         <!-- Lightbox image effects -->
@@ -98,6 +97,29 @@
             <h1>
                 <a href="/">- Boom Bike -</a>
             </h1>
+
+            <nav id="mobile_menu">
+                <ul>
+                    <li>
+                        <img src="{% static 'img/menu.png' %}" id="img_menu">
+                        <ul>
+                            <li>
+                                <a href="{% url 'bicycle-touring' %}">{% trans "Bicycle Touring" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'boom-festival' %}">{% trans "Boom Festival" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'get-there' %}">{% trans "Get there" %}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
             <span class="share">
                 <a href="#share">
                     <img src="{% static 'img/facebook.png' %}" alt="Accueil" class="img48 share">
@@ -121,6 +143,9 @@
                 </div>
                 <div class="left menu_item boom_and_bike_menu_item {% block nav_boom_and_bike %}{% endblock %}">
                     <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a>
+                </div>
+                <div class="left menu_item get_there_menu_item {% block nav_go_there %}{% endblock %}">
+                    <a href="{% url 'get-there' %}">{% trans "Get there" %}</a>
                 </div>
                 <div class="clear"></div>
             </div>

@@ -213,11 +213,40 @@ msgstr "Follow us"
 msgid "Error"
 msgstr "Error"
 
+
 msgid "This page does not exist"
 msgstr "This page does not exist"
 
 msgid "The requested page could not be found."
 msgstr "The requested page could not be found."
+
+msgid "Get there"
+msgstr "Get there"
+
+msgid "Boom Land Location"
+msgstr "Boom Land Location"
+
+msgid "How far is the Boom Land?"
+msgstr "How far is the Boom Land?"
+
+msgid "Get my position"
+msgstr "Get my position"
+
+msgid "Get route to the Boom Land"
+msgstr "Get route to the Boom Land"
+
+msgid "or start from"
+msgstr "or start from"
+
+msgid "another city"
+msgstr "another city"
+
+msgid "Distance by car"
+msgstr "Distance by car"
+
+msgid "Estimated distance by bike"
+msgstr "Estimated distance by bike"
+
 
 # # # # #
 # URLS  #
@@ -231,6 +260,9 @@ msgstr "^boom-festival$"
 
 msgid "^boom-and-bike$"
 msgstr "^boom-and-bike$"
+
+msgid "^get-there$"
+msgstr "^get-there$"
 
 #msgid ""
 #msgstr ""

@@ -34,6 +34,7 @@ urlpatterns += i18n_patterns('',
     url(_(r'^bicycle-touring$'), 'info.views.bicycle_touring', name='bicycle-touring'),
     url(_(r'^boom-festival$'), 'info.views.boom_festival', name='boom-festival'),
     url(_(r'^boom-and-bike$'), 'info.views.boom_and_bike', name='boom-and-bike'),
+    url(_(r'^get-there$'), 'info.views.get_there', name='get-there'),
 )
 
 handler404 = 'info.views.page_not_found'

@@ -61,6 +61,7 @@ p.video_holder iframe {
 
 /* Menu */
 div#menu {
+    display: none;
     width: 255px;
 }
 
@@ -94,10 +95,126 @@ span.share {
 
 div#main_content h2.cyclotourism,
 div#main_content h2.boom_festival,
-div#main_content h2.boom_and_bike {
+div#main_content h2.boom_and_bike,
+div#main_content h2.get_there{
     font-size: 42px;
 }
 
 img.link_img {
     margin-top: 12px;
 }
+
+
+/* Maps */
+
+div#distance_map_controls {
+    width: 100%;
+    font-family: Roboto Slab;
+    font-size: 13px;
+}
+
+div#distance_map_fields {
+    float: none;
+    width: 100%;
+}
+
+div#distance_map_info {
+    float: none;
+    width: 100%;
+}
+
+div#distance_map_info span {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+div#distance_map_info span:first-child {
+    margin-top: -12px;
+}
+
+div#distance_map_info span:last-child {
+    margin-bottom: 10px;
+}
+
+div#distance_map_info span span {
+    padding-left: 0;
+}
+
+span#estimated_km_by_car {
+    color: slategray;
+}
+
+span#estimated_km_by_bike {
+    color: #ca2929;
+}
+
+/* Mobile menu */
+#mobile_menu {
+    display: block;
+    margin-left: -10px;
+    font-family: Montserrat Subrayada;
+    font-size: 13px;
+}
+
+#mobile_menu ul {
+    margin-top: 0;
+    list-style: none;
+}
+
+#mobile_menu ul li {
+    display : inline-block;
+    width : 32px;
+    height : 32px;
+}
+
+#mobile_menu ul li ul {
+    margin-top: 0;
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+    margin-top: -2px;
+    margin-left: -10px;
+    z-index: 100;
+}
+
+#mobile_menu ul li:hover ul,
+#mobile_menu ul li:active ul {
+    left : 0;
+}
+
+#mobile_menu ul li ul li {
+    display : block;
+    background : #a6a6a6;
+    width : 150px;
+    text-align: center;
+    height: 45px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#mobile_menu ul li ul li:first-child {
+    border-top: 2px solid black;
+}
+
+#mobile_menu ul li ul li:hover,
+#mobile_menu ul li ul li:active {
+    background : #A04C4C;
+}
+
+#mobile_menu ul li ul li a {
+    display : block;
+    vertical-align : middle;
+    width: 100%;
+    height: 100%;
+    line-height : 45px;
+    color: #000000;
+    font-size: 15px;
+}
+
+#img_menu {
+    width: 32px;
+    height: 32px;
+}
+
