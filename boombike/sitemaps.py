@@ -15,6 +15,7 @@ class ViewSitemap(Sitemap):
                  'bicycle-touring',
                  'boom-festival',
                  'boom-and-bike',
+                 'get-there',
                 ]
 
     def location(self, item):
