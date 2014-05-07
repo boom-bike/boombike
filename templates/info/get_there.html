@@ -29,6 +29,7 @@
 
     var total_user_distance_by_car;
     var estimated_user_distance_by_bike;
+    var carbon_footprint;
 
     var last_location_update_source;
 
@@ -106,9 +107,12 @@
                 
                 total_user_distance = Math.round(total_user_distance);
                 estimated_user_distance_by_bike = Math.round(estimated_user_distance_by_bike);
+                carbon_footprint =
+                        Math.round((estimated_user_distance_by_bike / 500.0) * 0.1 * 1000) / 1000;
 
                 $("span#estimated_km_by_car").html(total_user_distance + " km");
                 $("span#estimated_km_by_bike").html(estimated_user_distance_by_bike + " km");
+                $("span#carbon_footprint_reduction").html(carbon_footprint);
 
                 $("div#distance_map_info").css('visibility','visible');
             }
@@ -148,42 +152,57 @@
             enableNewStyle: true
         });
 
+        function distance_map_trace_route() {
+            GMaps.geocode({
+                address: $('#custom_city').val(),
+                callback: function(results, status) {
+                    if (status == 'OK') {
+                        user_custom_city_location_lat = results[0].geometry.location.lat();
+                        user_custom_city_location_lng = results[0].geometry.location.lng();
+
+                        distance_map.setCenter(user_custom_city_location_lat,
+                        user_custom_city_location_lng);
+
+                        distance_map.removeMarkers();
+
+                        distance_map.addMarker({
+                            lat: user_custom_city_location_lat,
+                            lng: user_custom_city_location_lng,
+                            title: $("#custom_city").val(),
+                            infoWindow: {
+                                content: '<div style="text-align: center; width: 120px; height: 40px;">' +
+                                          $("#custom_city").val() +
+                                          '</div>'
+                            }
+                        });
+
+                        $('button#set_route_on_distance_map').removeAttr('disabled');
+                    }
+                    else {
+                        alert("This city could not be found.");
+                    }
+                }
+            });
+        }
+
         $('#custom_city').keyup(function(event) {
-            if(event.keyCode == 13) {
-                $("div#distance_map_info").css('visibility','hidden');
+            if (event.keyCode == 13) {
+//                $("div#distance_map_info").css('visibility','hidden');
                 last_location_update_source = SOURCE_CUSTOM_CITY;
 
-                GMaps.geocode({
-                    address: $('#custom_city').val(),
-                    callback: function(results, status) {
-                        if (status == 'OK') {
-                            user_custom_city_location_lat = results[0].geometry.location.lat();
-                            user_custom_city_location_lng = results[0].geometry.location.lng();
-
-                            distance_map.setCenter(user_custom_city_location_lat,
-                            user_custom_city_location_lng);
-
-                            distance_map.removeMarkers();
-
-                            distance_map.addMarker({
-                                lat: user_custom_city_location_lat,
-                                lng: user_custom_city_location_lng,
-                                title: $("#custom_city").val(),
-                                infoWindow: {
-                                    content: '<div style="text-align: center; width: 120px; height: 40px;">' +
-                                              $("#custom_city").val() +
-                                              '</div>'
-                                }
-                            });
-                            
-                            $('button#set_route_on_distance_map').removeAttr('disabled');
-                        }
-                        else {
-                            alert("This city could not be found.");
-                        }
-                    }
-                });
+                distance_map_trace_route();
             }
+            else {
+                if ($(this).val() != "")
+                    $('#set_custom_input_location_button').attr("disabled", false);
+                else
+                    $('#set_custom_input_location_button').attr("disabled", true);
+            }
+        });
+
+        $('#set_custom_input_location_button').click(function() {
+            last_location_update_source = SOURCE_CUSTOM_CITY;
+            distance_map_trace_route();
         });
 
     });
@@ -224,6 +243,9 @@
                                    placeholder="{% trans 'another city' %}"
                                    id="custom_city"
                                    name="custom_city">
+                            <button id="set_custom_input_location_button" disabled>
+                                {% trans "Go" %}
+                            </button>
                         </span>
                     </li>
                     <li>
@@ -244,6 +266,11 @@
                 <span id="by_bike">
                     <b>{% trans "Estimated distance by bike" %} :</b>
                     <span id="estimated_km_by_bike">-</span>
+                </span>
+                <span id="carbon_footprint">
+                    <b>{% trans "Reducing carbon footprint by" %}: </b>
+                    <span id="carbon_footprint_reduction">-</span>
+                    <span> {% trans "Ton(s) of" %} CO<sup>2</sup></span>
                 </span>
             </div>
 

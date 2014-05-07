@@ -84,6 +84,29 @@
             <h1>
                 <a href="/">- Boom Bike -</a>
             </h1>
+
+            <nav id="mobile_menu">
+                <ul>
+                    <li>
+                        <img src="{% static 'img/menu.png' %}" id="img_menu">
+                        <ul>
+                            <li>
+                                <a href="{% url 'bicycle-touring' %}">{% trans "Bicycle Touring" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'boom-festival' %}">{% trans "Boom Festival" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'get-there' %}">{% trans "Get there" %}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
             <span class="share">
                 <a href="#share">
                     <img src="{% static 'img/facebook.png' %}" alt="Accueil" class="img48 share">
@@ -108,6 +131,9 @@
                 <div class="left menu_item boom_and_bike_menu_item {% block nav_boom_and_bike %}{% endblock %}">
                     <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a>
                 </div>
+                <div class="left menu_item get_there_menu_item {% block nav_go_there %}{% endblock %}">
+                    <a href="{% url 'get-there' %}">{% trans "Get there" %}</a>
+                </div>
                 <div class="clear"></div>
             </div>
         </div>
@@ -125,7 +151,8 @@
                     <a href="{% url 'home' %}">{% trans "Home" %}</a><br>
                     <a href="{% url 'bicycle-touring' %}">{% trans "Bicycle Touring" %}</a><br>
                     <a href="{% url 'boom-festival' %}">{% trans "Boom Festival" %}</a><br>
-                    <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a>
+                    <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a><br>
+                    <a href="{% url 'get-there' %}">{% trans "Get there" %}</a>
                 </div>
                 <div class="left sitemap_col">
                     <h4>{% trans "Follow us" %}</h4>

@@ -250,6 +250,11 @@ msgstr "Distance by car"
 msgid "Estimated distance by bike"
 msgstr "Estimated distance by bike"
 
+msgid "Reducing carbon footprint by"
+msgstr "Reducing carbon footprint by"
+
+msgid "Ton(s) of"
+msgstr "Ton(s) of"
 
 # # # # #
 # URLS  #

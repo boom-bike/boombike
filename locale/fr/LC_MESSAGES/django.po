@@ -260,6 +260,12 @@ msgstr "Distance en voiture"
 msgid "Estimated distance by bike"
 msgstr "Distance estimée en vélo"
 
+msgid "Reducing carbon footprint by"
+msgstr "Empreinte carbone réduite de"
+
+msgid "Ton(s) of"
+msgstr "Tonne(s) de"
+
 
 # # # # #
 # URLS  #

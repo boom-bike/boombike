@@ -957,7 +957,7 @@ span#estimated_km_by_car {
     color: slategray;
 }
 
-span#estimated_km_by_bike {
+span#estimated_km_by_bike, span#carbon_footprint span {
     color: #ca2929;
 }
 
@@ -968,3 +968,29 @@ span#estimated_km_by_bike {
     display: none;
 }
 
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    background: #4479BA;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    
+    box-shadow: 1px 1px 1px #888888;
+    webkit-box-shadow: 1px 1px 1px #888888;
+    moz-box-shadow: 1px 1px 1px #888888;
+    khtml-box-shadow: 1px 1px 1px #888888;
+    ms-box-shadow: 1px 1px 1px #888888;
+    o-box-shadow: 1px 1px 1px #888888;
+}
+
+button:disabled {
+    background: #9db3dc;
+    cursor: default;
+}
+
+button:active {
+    background: #497FBF;
+    cursor: pointer;
+}
