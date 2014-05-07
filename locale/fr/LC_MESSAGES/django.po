@@ -218,6 +218,9 @@ msgid "boom_and_bike_meta_description"
 msgstr "Découvrez pourquoi Boom et vélo s'allient parfaitement. Imprégnez-vous de la paix et de"
        " l'ouverture d'esprit qu'ils véhiculent."
 
+msgid "go_there_meta_description"
+msgstr "Où se trouve le Boom Festival? Quelle distance vous sépare du site du festival?"
+
 msgid "Follow us"
 msgstr "Suivez-nous"
 

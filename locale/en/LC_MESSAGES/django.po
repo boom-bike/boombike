@@ -207,6 +207,9 @@ msgid "boom_and_bike_meta_description"
 msgstr "Discover why Boom and bike are perfect together. Get in the peaceful mood of an open-minded"
        " state of mind."
 
+msgid "go_there_meta_description"
+msgstr "Where is the Boom Festival land? How far is it from your home?"
+
 msgid "Follow us"
 msgstr "Follow us"
 
