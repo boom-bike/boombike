@@ -170,7 +170,7 @@ msgstr "<p>It is by us each bringing our own piece of the jigsaw that we can bri
        "<p>Leave your worries behind you! Let’s go!</p>"
 
 msgid "boom_2008_official_bike_video"
-msgstr "Boom Festival 2008 : Coming to Boom by Bike"
+msgstr "Boom Festival 2008: Coming to Boom by Bike"
 
 msgid "Next"
 msgstr "Next"
@@ -216,7 +216,6 @@ msgstr "Follow us"
 msgid "Error"
 msgstr "Error"
 
-
 msgid "This page does not exist"
 msgstr "This page does not exist"
 
@@ -255,6 +254,94 @@ msgstr "Reducing carbon footprint by"
 
 msgid "Ton(s) of"
 msgstr "Ton(s) of"
+
+# Get there content #
+
+msgid "by bike"
+msgstr "Cycling"
+
+msgid "get_there_by_bike_content"
+msgstr "<p>We recommend that you ride on peaceful roads away from big cities. Even though it may"
+        " increase the riding distance by 20%, you will be able to enjoy safe and (almost) car-free"
+        " roads.</p>"
+        "<p>The following should help you in choosing your route:</p>"
+        "<ul>"
+        "<li>Bike paths: they are generally 100% dedicated to cyclists and have many signs"
+        " indicating main checkpoints. The best option for a peaceful journey!"
+        " <a href=\"http://www.eurovelo.org/routes/\" target=\"blank\">Visit Eurovelo routes"
+        " website.</a> </li>"
+        "<li>Online tools, software and apps to be used carefully:"
+        "<ul><li><a href=\"https://www.google.com/maps\" target=\"blank\">Google Maps</a>:"
+        " don’t rely too much on the bike mode, it often brings bad surprises </li> "
+        "<li><a href=\"http://www.naviki.org/\" target=\"blank\">Naviki</a>: a beta version"
+        " website for bicycle routes</li>"
+        "<li><a href=\"http://www.garmin.com/en-US/shop/downloads/basecamp\" target=\"blank\">"
+        "Basecamp</a>: a free software to explore maps in 3D, an important aspect as altitude"
+        " matters</li>"
+        "<li><a href=\"http://www.bikemap.net/en/?tab=top#/z5/45.55252,0.70312/terrain&gsc.tab=0\" target=\"blank\">"
+        "Bikemap</a>: find the website and app users’ best routes</li>"
+        "</ul>"
+        "<li>Good old paper maps: make sure they are precise enough so that you can highlight"
+        " small roads</li>"
+        "</ul>"
+        "<p>Our advice: use and combine all sources available to make your choice. Combining all"
+        " the previous tools to define your route is the best way to have a nice trip.</p>"
+        "<p>> A route example <a href=\"https://docs.google.com/document/d/1pmomn2f-ibzGD203bjsRpPynM7AocYbxlVKPVe6eSS4/edit?usp=sharing\" target=\"blank\">"
+        " from northern France to Idanha-a-nova</a>"
+        "</p>"
+
+msgid "by train"
+msgstr "By train"
+
+msgid "get_there_by_train_content"
+msgstr "<p>The train could allow you to reduce the time required to pedal all the way the festival."
+        " It’s also the best fallback plan if you decide not to go by bike.</p>"
+        "<p>For more information, check out the train companies’ website:</p>"
+        "<ul>"
+        "<li><a href=\"http://uk.voyages-sncf.com/en/\" target=\"blank\">Voyages SNCF</a> -"
+        " <a href=\"http://www.freewheelingfrance.com/planning-a-trip/bikes-and-french-trains.html\" target=\"blank\">French trains and bicyle</li>"
+        "<li><a href=\"http://www.renfe.com/EN/viajeros/\" target=\"blank\">Renfe</a>"
+        " - <a href=\"http://www.renfe.com/EN/viajeros/info/bicicletas.html\" target=\"blank\">Spanish trains and bicyles</a></li>"
+        "<li><a href=\"http://www.cp.pt/cp/?lang=en\" target=\"blank\">CP (Caminhos de ferro Portugueses)</a>"
+        " - <a href=\"http://www.cp.pt/cp/displayPage.do?vgnextoid=ffc33f9c1cee5010VgnVCM1000007b01a8c0RCRD#6\" target=\"blank\">Portuguese trains and bicycles</a>"
+        "</li>"
+        "</ul>"
+
+msgid "by bus"
+msgstr "By bus"
+
+msgid "get_there_by_bus_content"
+msgstr "<p>You can also take a bus with your bike but you should avoid Eurolines if so (sport"
+        " equipments not allowed). Alsa buses allow you travel with sport equipment if they are"
+        " well packed. You can easily get a ticket and drivers will often help you with your bike"
+        " and panniers. Visit <a href=\"http://www.alsa.es/en/\" target=\"blank\">Alsa website</a> for more information.</p>"
+        "<p>The Boom Festival also proposes bus travel from the main airports and cities in France,"
+        " Spain, Portugal… For more information, visit the the <a href=\"http://www.boomfestival.org/boom2014/tickets/boom-bus-info/\" target=\"blank\">Boom Festival official website.</a>"
+        "</p>"
+
+msgid "by car"
+msgstr "By car"
+
+msgid "get_there_by_car_content"
+msgstr "<p>Going to the festival by car could be the fastest and/or cheapest way to cross multiple"
+        " countries in Europe. If you choose this solution, please share your ride with others to"
+        " reduce carbon emissions."
+        "<ul><li><a href=\"https://www.liftshare.com/content/default.asp?sid=2582&sid2=2088&skin=539&lang=EN&country=GB\" target=\"blank\">Boom Festival Liftshare</a>"
+        "</li>"
+        "<li><a href=\"http://www.trancegoa.org/l,trancegoa,12,,1.html\" target=\"blank\">Trancegoa</a>: French trance lovers offering and seeking car travels as accommodation:"
+        "</li>"
+        "</ul>"
+        "</p>"
+
+msgid "teleportation"
+msgstr "Teleportation"
+
+msgid "teleport_there"
+msgstr "<p>Nope, just kidding...</p>"
+
+msgid "boom_bike_guide"
+msgstr "Check out the <a href=\"http://www.boomfestival.org/boom2014/site/pdf/boomfest_bybike_initiative_supportGuide.pdf\" target=\"blank\">"
+        " Boom By Bike Initiative Support Guide</a> written by Boom officials"
 
 # # # # #
 # URLS  #

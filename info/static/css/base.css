@@ -593,7 +593,7 @@ div.article_style {
     margin-bottom: 20px;
 }
 
-div.article_style p {
+div.article_style p, div.article_style ul {
     font-family: Roboto Slab;
     font-size: 14px;
 
@@ -605,6 +605,18 @@ div.article_style p {
     margin: 0 auto;
 
     background-color: #F0F0F0;
+}
+
+div.article_style ul {
+    padding-left: 70px;
+}
+
+div.article_style ul li ul {
+    padding-left: 35px;
+}
+
+div.article_style ul li ul:first-child {
+    padding-top: 5px;
 }
 
 div#error_div {
@@ -632,20 +644,20 @@ div.article_style p.bottom_link img {
     margin-right: 10px;
 }
 
-div.article_style p.bottom_link a:link { /* unvisited link */
+div.article_style a:link { /* unvisited link */
     font-size: 14px;
     color: #A02020;
 }
 
-div.article_style p.bottom_link a:visited { /* visited link */
+div.article_style a:visited { /* visited link */
     color: #A02020;
 }
 
-div.article_style p.bottom_link a:hover { /* mouse over link */
+div.article_style a:hover { /* mouse over link */
     color: #E02020;
 }
 
-div.article_style p.bottom_link a:active { /* selected link */
+div.article_style a:active { /* selected link */
     color: #F04040;
 }  
 
@@ -911,6 +923,10 @@ div#distance_map_controls {
     width: 100%;
     font-family: Roboto Slab;
     font-size: 15px;
+}
+
+div#distance_map {
+    border-top: 1px solid black;
 }
 
 input#custom_city {

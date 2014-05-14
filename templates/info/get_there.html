@@ -18,6 +18,19 @@
     var boom_land_lat = 39.969112;
     var boom_land_lng = -7.183699;
 
+    var boom_land_marker_info = {
+            lat: boom_land_lat,
+            lng: boom_land_lng,
+            title: 'Boom Land',
+            infoWindow: {
+                content: '<div style="width: 160px; height: 80px;">\n\
+                              <h4>Boom Festival</h4>\n\
+                              Idanha-a-Nova<br>\n\
+                              GPS: 39.969112, -7.183699\n\
+                          </div>'
+            }
+        };
+
     var SOURCE_POSITION = "button_set_position";
     var SOURCE_CUSTOM_CITY = "input_city_name";
 
@@ -130,18 +143,7 @@
             enableNewStyle: true
         });
 
-        map.addMarker({
-            lat: boom_land_lat,
-            lng: boom_land_lng,
-            title: 'Boom Land',
-            infoWindow: {
-                content: '<div style="width: 160px; height: 80px;">\n\
-                              <h4>Boom Festival</h4>\n\
-                              Idanha-a-Nova<br>\n\
-                              GPS: 39.969112, -7.183699\n\
-                          </div>'
-            }
-        });
+        map.addMarker(boom_land_marker_info);
 
         // Distance map
         distance_map = new GMaps({
@@ -175,6 +177,8 @@
                                           '</div>'
                             }
                         });
+
+                        distance_map.addMarker(boom_land_marker_info);
 
                         $('button#set_route_on_distance_map').removeAttr('disabled');
                     }
@@ -277,6 +281,48 @@
             <div class="clear"></div>
         </div>
         <div id="distance_map"></div>
+
+        <h3>
+            {% trans "by bike" %}
+        </h3>
+        <div id="get_there_by_bike">
+            {% trans "get_there_by_bike_content" %}
+        </div>
+
+        <h3>
+            {% trans "by train" %}
+        </h3>
+        <div id="get_there_by_train">
+            {% trans "get_there_by_train_content" %}
+        </div>
+
+        <h3>
+            {% trans "by bus" %}
+        </h3>
+        <div id="get_there_by_train">
+            {% trans "get_there_by_bus_content" %}
+        </div>
+
+        <h3>
+            {% trans "by car" %}
+        </h3>
+        <div id="get_there_by_train">
+            {% trans "get_there_by_car_content" %}
+        </div>
+
+        <h3>
+            {% trans "teleportation" %}
+        </h3>
+        <div id="teleport_there">
+            {% trans "teleport_there" %}
+        </div>
+
+        <hr>
+
+        <img src="{% static 'img/spiral.png' %}" alt=">" class="img24 left link_img">
+        <p class="bottom_link">
+            {% trans "boom_bike_guide" %}
+        </p>
 
     </div>
 </div>
