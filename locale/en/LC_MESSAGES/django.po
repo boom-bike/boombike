@@ -1055,6 +1055,9 @@ msgstr "> I want to login <"
 msgid "> I want to create an account <"
 msgstr "> I want to create an account <"
 
+msgid "Login / create an account"
+msgstr "Login / create an account"
+
 # # # # #
 # URLS  #
 # # # # #

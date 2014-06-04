@@ -1156,6 +1156,9 @@ msgstr "> Je veux me connecter <"
 msgid "> I want to create an account <"
 msgstr "> Je veux créer un compte <"
 
+msgid "Login / create an account"
+msgstr "Se connecter / Créer un compte"
+
 # # # # #
 # URLS  #
 # # # # #
