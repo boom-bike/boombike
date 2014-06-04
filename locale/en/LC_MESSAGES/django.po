@@ -986,8 +986,8 @@ msgstr "Location"
 msgid "# Stops in location"
 msgstr "# Stops in location"
 
-msgid "You have no checkpoints yet."
-msgstr "You have no checkpoints yet."
+msgid "You have no checkpoint yet."
+msgstr "You have no checkpoint yet."
 
 msgid "Boom Bikers checkpoints"
 msgstr "Boom Bikers checkpoints"
@@ -1034,8 +1034,8 @@ msgstr "Sorry, this user did not set his email address :("
 msgid "Contact this tourer by email"
 msgstr "Contact this tourer by email"
 
-msgid "No checkpoints have been defined yet."
-msgstr "No checkpoints have been defined yet."
+msgid "No checkpoint defined yet."
+msgstr "No checkpoint defined yet."
 
 msgid "You are not logged in."
 msgstr "You are not logged in."
