@@ -1168,6 +1168,9 @@ msgstr "> Je veux me déconnecter <"
 msgid "together_title"
 msgstr "Ensemble sur la route"
 
+msgid "Logout"
+msgstr "Se déconnecter"
+
 # # # # #
 # URLS  #
 # # # # #

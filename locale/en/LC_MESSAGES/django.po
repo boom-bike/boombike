@@ -1067,6 +1067,9 @@ msgstr "> I want to logout <"
 msgid "together_title"
 msgstr "Together on the road"
 
+msgid "Logout"
+msgstr "Logout"
+
 # # # # #
 # URLS  #
 # # # # #

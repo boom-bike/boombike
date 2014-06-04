@@ -1,5 +1,6 @@
 # Ignore settings so that DB access is not accessible from anyone else
 settings.py
+django.fcgi
 
 # Ignore Python compiled files
 *.pyc
