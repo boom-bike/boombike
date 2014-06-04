@@ -1,0 +1,476 @@
+# boom-bike.info en translation
+# Copyright (C) 2014
+# Quentin CARON <quentin.caron@gmail.com>, 2014
+
+#: templates/info/bicycle_touring.html:17
+msgid "Bicycle Touring"
+msgstr "Cyclotourisme"
+
+msgid "... or bicycle trekking?"
+msgstr "... ou cyclo-randonnée?"
+
+msgid "A good way to get fit!"
+msgstr "Un bon moyen d'être en forme!"
+
+msgid "Getting closer to locals"
+msgstr "A la rencontre des locaux"
+
+msgid "Boom Festival"
+msgstr "Boom Festival"
+
+msgid "What is the Boom?"
+msgstr "C'est quoi le Boom?"
+
+msgid "This is not my kind..."
+msgstr "C'est pas trop mon genre..."
+
+msgid "You're already there!"
+msgstr "Vous y êtes déjà!"
+
+msgid "Boom and Bike"
+msgstr "Boom et Vélo"
+
+msgid "A state of mind..."
+msgstr "Un état d'esprit..."
+
+msgid "... and common values!"
+msgstr "... et des valeurs communes"
+
+msgid "All in one !"
+msgstr "All in one !"
+
+msgid "Have questions? Need information?"
+msgstr "Des questions? Besoin d'informations?"
+
+msgid "Contact me at"
+msgstr "Contactez-moi sur"
+
+msgid "boom_bike_note"
+msgstr "Pour vous aider à aller au Boom Festival à vélo et en profiter le plus possible,"
+       " je réunis ici mes expériences de 2012 et de 2013 à travers la France, l’Espagne et le"
+       " Portugal."
+
+msgid "What is bicycle touring?"
+msgstr "Le cyclotourisme c'est quoi?"
+
+msgid "bicycle_touring"
+msgstr "<p>Tout d’abord, le tourisme consiste à effectuer des activités de loisirs dans le cadre d’un"
+       " voyage ou d’un séjour hors de notre environnement quotidien ou habituel. Le cyclotourisme"
+       " consiste donc à faire du tourisme dont l’activité principale est le cyclisme. Le vélo y"
+       " joue un rôle bien plus important qu’un simple moyen de transport ou une activité sportive"
+       ": c’est une porte sur le monde et une ouverture sur les autres !</p>"
+       "<p>A l’inverse du vélo sur route (où faire un maximum de kilomètres en un minimum de temps est"
+       " l’objectif), faire du tourisme à vélo c’est prendre le temps: le temps d’admirer le"
+       " paysage, de discuter avec des inconnus autour d’un repas, de découvrir de façon authentique"
+       " une autre culture, d’échanger un regard, de voler un sourire…</p>"
+       "<p>Choisir le vélo pour se déplacer c’est aussi accepter d’aller bien moins vite qu’en voiture"
+       " ou en avion. C’est avec une certaine lenteur que l’on chemine vers un point de chute"
+       " distant de plusieurs dizaines de kilomètres pour passer la nuit. Cela permet d’apprécier"
+       " tout ce qui présente sur notre chemin, de vivre pleinement, tout simplement.</p>"
+       "<p>Balade, exercice physique, liberté, voyage écologique… Au final, tout cela résume très bien"
+       " le cyclotourisme, mais ce n’est pas comme aller faire ses courses chez le marchant du coin."
+       " Il faut prévoir où on va dormir et comment, savoir ce que l’on va manger ou pouvoir"
+       " cuisiner, préparer chaque étape… Bref, penser pratique !</p>"
+
+msgid "bicycle_trekking"
+msgstr "<p>La cyclo-randonnée relève bien plus de la performance physique que du voyage: c’est"
+       " plutôt un challenge sportif qu’une longue balade, une activité limitée dans le temps "
+       "(dépassant rarement quelques jours de suite) et généralement intense (choix d'un parcours d’une"
+       " difficulté donnée). A ne pas confondre avec le cyclotourisme donc, le voyage s’intègrant"
+       " ici dans la durée et n’ayant pas pour but d’atteindre un objectif sportif.</p>"
+       "<p>La difficulté des randonnées justifie un équipement fiable et performant, c’est pourquoi"
+       " les cyclotouristes trouveront une quantité importante d’information et de matériel à lui"
+       " emptrunter: tente ultra-légère, réchaud ou encore matériel d’orientation. Si on peut se"
+       " passer de cette technicité, elle rend les étapes bien plus agréables en nous permettant"
+       " par exemple de manger chaud n’importe quand ou simplement de nous diriger dans la bonne"
+       " direction.</p>"
+       "<p>De nombreuses questions d’ordre logistique se pose au cyclotouriste qui ne devra pas"
+       " seulement préparer chaque étape de son voyage mais aussi emmener tout le matériel adapté à"
+       " ce dernier.</p>"
+
+msgid "get_fitted"
+msgstr "<p>C’est bien connu, le vélo nous fait du bien car c’est une activité physique qui demande"
+       " une certaine endurance et donne du tonus. De plus, c’est une activité facilement"
+       " accessible à tous: pas besoin d’être un grand sportif pour se faire plaisir. Et cerise sur"
+       " le gâteau, il n’y a pas (ou peu) de contre-indication à la pratique du vélo. Vous n’avez"
+       " plus d’excuse!</p>"
+       "<p>Un seul élément important est à prendre en compte: votre morphologie. Choisir le bon"
+       " vélo et adapter ses éléments réglables vous permettra de rouler sans douleurs, en toute"
+       " sérénité.</p>"
+
+msgid "closer_to_locals"
+msgstr "<p>Le vélo est une façon un peu spéciale de voyager.<br>"
+       "Les cyclistes suscitent souvent la curiosité et l’admiration: les personnes que l’on"
+       " rencontre sur la route souvent posent tout un tas de questions et restent stupéfaites face"
+       " à cette démarche étrange à notre ère: voyager lentement à la force des jambes. Cela permet"
+       " de poser à notre tour des questions à ces curieux qui ont baissé leur garde. On en apprend"
+       " donc beaucoup sur ces personnes et leur environnement, une façon décomplexée d’étancher"
+       " notre propre soif de curiosité.</p>"
+       "<p>Votre vélo et votre sourire: vos meilleurs atouts pour aller à la rencontre des autres!</p>"
+
+
+msgid "bicycle_touring_know_more"
+msgstr "Pour en savoir plus sur le cyclotourisme et son histoire, rendez-vous sur "
+       " <a href=\"http://fr.wikipedia.org/wiki/Cyclotourisme\" target=\"_blank\">l'article"
+       " Wikipédia</a>."
+
+msgid "what_is_boom"
+msgstr "<p>Le Boom est un festival qui a lieu tous les deux ans au Portugal, sur les bords du lac"
+       " d’Idanha-a-Nova. Créé en 1997, il était à ses débuts dédié à la musique trance"
+       " psychédélique et accueille maintenant plusieurs dizaines de milliers de visiteurs.</p>"
+       "<p>Il fêtera en 2014 sa 10ème édition! Un vrai succès pour ce festival activiste qui a su"
+       " évoluer et élargir son champs d’action à d’autres cultures alternatives, à l’écologie et à"
+       " l’art. Le Boom n’est donc pas une simple clique d’artistes donnant le tempo sur scène,"
+       " c’est un lieu d’échange et de partage où l’on peut passer des heures à danser, à assister"
+       " à des conférences ou encore à faire yoga.</p>"
+
+msgid "boom_is_not_my_kind"
+msgstr "<p>Pendant une semaine, ce sont plus de 100 nationalités qui se rencontrent et se"
+       " découvrent pour participer à un grand brassage. Cet évènement multiculturel laisse le"
+       " souvenir d’une expérience riche, en dehors des conventions bien établies de notre société"
+       " capitaliste.</p>"
+       "<p>On s’y laisse surprendre par des déambulations artistiques aléatoires surréalistes et"
+       " par des décors hors du commun. C’est un lieu où l’esprit se complaît à vagabonder en toute"
+       " liberté, dans le respect de la nature et de son prochain. Alors si vous n’êtes pas un fan"
+       " absolu de la musique qui y est jouée, vous trouverez à coup sûr votre bonheur dans les"
+       " nombreuses activités proposées.</p>"
+       "<p>Au Boom, pas de VIP. Chacun participe à sa manière et nombreux sont ceux qui y viennent"
+       " pour la première fois. Vous avez votre place dans ce festival!</p>"
+
+msgid "already_there"
+msgstr "<p>Sur les bords du lac comme sur le dancefloor, vous découvrirez une joie de vivre et une"
+       " simplicité hors du commun. En fait c’est un peu comme des vacances... Si vous vous "
+       " imaginez au soleil cet été, cela peut tout à fait être au Boom!!</p>"
+       "<p>Le festival se vit avant, pendant et après: c’est un vrai état d’esprit qui est véhiculé"
+       " au travers des expériences extraordinaires qui y sont vécues. Rejoignez-nous!!</p>"
+
+msgid "boom_2012_official_film_title"
+msgstr "Film officiel du Boom Festival 2012: The Alchemy of Spirit"
+
+msgid "boom_official_website_link"
+msgstr "Obtenez plus d'informations sur le festival, la programmation et les actus sur le"
+       " <a href=\"http://www.boomfestival.org\" target=\"blank\">site officiel du Boom Festival</a>."
+
+msgid "a_state_of_mind"
+msgstr "<p>Le festival se veut le plus respectueux possible pour l’environnement."
+       " La réduction des déchets comme des gaz à effet de serre générés par les milliers de"
+       " visiteurs se veulent réduits au maximum, limitant l’impact sur l’éco-système local comme"
+       " à l’échelle de la planète.</p>"
+       "<p>Nous avons tous la responsabilité de la préservation des ressources et des espaces"
+       " naturels. Pour cette raison, le festival supporte les visiteurs s’y rendant à vélo. Une"
+       " belle façon de participer et de véhiculer un message important pour nous tous!</p>"
+
+msgid "common_values"
+msgstr "<p>Vivre un voyage à vélo puis enchaîner sur le Boom Festival est un peu comme “se vider"
+       " le corps pour libérer l’esprit”. C’est faire l’expérience d’une autre manière de voir les"
+       " choses sans que nos réflexes d’êtres conditionnés ne rejette systématiquement les"
+       " nouvelles choses qui se présentent à nous. Les barrières tombent, nous partageons alors"
+       " la seule chose que nous possédons vraiment: notre propre existence, notre expérience au"
+       " monde.</p>"
+       "<p>Humilité, simplicité, générosité, autant de valeurs qui trouvent largement leur place"
+       " dans le voyage et le festival. Elles nous aident à se recentrer sur nous-mêmes, à trouver"
+       " notre place dans ce monde. Et quoi de mieux que de le faire de façon ludique?</p>"
+
+msgid "all_in_one"
+msgstr "<p>C’est en apportant chacun notre pierre à l’édifice que nous faisons vivre des valeurs"
+       " humaines au travers de cette expérience. Rendons la exceptionnelle, faisons la rayonner,"
+       " rendons la encore plus belle qu’elle ne l’est déjà!</p>"
+       "<p>Le cyclotourisme et le Boom Festival se vivent dans la joie et la bonne humeur. Laissez"
+       " vos acquis et vos soucis derrière vous. En route!</p>"
+
+msgid "boom_2008_official_bike_video"
+msgstr "Boom Festival 2008: Coming to Boom by Bike"
+
+msgid "Next"
+msgstr "Suivant"
+
+msgid "Previous"
+msgstr "Précédent"
+
+msgid "boom_official_flickr_link"
+msgstr "Rien de mieux que des<a href=\"http://www.flickr.com/photos/boomfestivalofficial/\""
+       "target=\"blank\"> photos du Boom 2012</a> pour remplacer mille mots!"
+
+msgid "Information to bike it to the Boom Festival"
+msgstr "Informations pour se rendre au Boom Festival à vélo"
+
+msgid "Biking it the Boom Land, a great journey to Portugal"
+msgstr "Aller au Boom en vélo, une aventure extraordinaire pour le Portugal"
+
+msgid "What is the Boom Festival?"
+msgstr "C'est quoi le Boom Festival?"
+
+msgid "home_meta_description"
+msgstr "Equipement, hébergement, climat, tous les renseignements utiles pour rejoindre le Boom"
+       " Festival à vélo (Idanha-a-Nova, Portugal)"
+
+msgid "bicycle_touring_meta_description"
+msgstr "Le cyclotourisme est bien différent de la cyclo-randonnée."
+       " Voyager lentement, profiter de la nature ou encore se rapprocher des locaux, c'est ça"
+       " l'itinérance à vélo!"
+
+msgid "boom_festival_meta_description"
+msgstr "Le Boom Festival porte en grande partie sur la musique trance psychédélique mais a su"
+       " s'orienter vers d'autres formes de musique et d'art. Vous trouverez forcément quelque chose"
+       " d'intéressant à faire sur le site du festival!"
+
+msgid "boom_and_bike_meta_description"
+msgstr "Découvrez pourquoi Boom et vélo s'allient parfaitement. Imprégnez-vous de la paix et de"
+       " l'ouverture d'esprit qu'ils véhiculent."
+
+msgid "go_there_meta_description"
+msgstr "Où se trouve le Boom Festival? Quelle distance vous sépare du site du festival?"
+
+msgid "Follow us"
+msgstr "Suivez-nous"
+
+msgid "This page does not exist"
+msgstr "Cette page n'existe pas"
+
+msgid "Error"
+msgstr "Erreur"
+
+msgid "The requested page could not be found."
+msgstr "La page demandée n'a pas pu être trouvée."
+
+msgid "Get there"
+msgstr "Nous rejoindre"
+
+msgid "Boom Land Location"
+msgstr "Localisation du festival"
+
+msgid "How far is the Boom Land?"
+msgstr "Le Boom, c'est loin?"
+
+msgid "Get my position"
+msgstr "Obtenir ma position"
+
+msgid "Get route to the Boom Land"
+msgstr "Tracer la route vers le Boom"
+
+msgid "or start from"
+msgstr "ou démarrer depuis"
+
+msgid "another city"
+msgstr "une autre ville"
+
+msgid "Distance by car"
+msgstr "Distance en voiture"
+
+msgid "Estimated distance by bike"
+msgstr "Distance estimée en vélo"
+
+msgid "Reducing carbon footprint by"
+msgstr "Empreinte carbone réduite de"
+
+msgid "Ton(s) of"
+msgstr "Tonne(s) de"
+
+# Get there content #
+
+msgid "by bike"
+msgstr "A vélo"
+
+msgid "get_there_by_bike_content"
+msgstr "<p>De façon générale, préférez les routes calmes et éloignées des grandes villes. Si cela"
+        " rajoute parfois 20% de distance à votre trajet, vous aurez l’assurance d’un itinéraire"
+        " agréable et sûr.</p>"
+        "<p>Pour établir votre itinéraire, plusieurs solutions existent:</p>"
+        "<ul>"
+        "<li>Suivre les routes de vélo: ce sont généralement des « voies propres » bien balisées,"
+        " idéales donc du point de vue sécurité et tranquillité."
+        " <a href=\"http://www.eurovelo.org/\" target=\"blank\">Visiter le site Eurovélo</a></li>"
+        "<li>Utiliser des outils en ligne et ajuster la route si nécessaire:"
+        "<ul>"
+        "<li><a href=\"https://www.google.fr/maps\" target=\"blank\">Google Maps</a>: attention au mode Vélo qui réserve régulièrement des surprises"
+        "</li>"
+        "<li><a href=\"http://www.naviki.org/\" target=\"blank\">Naviki</a>: qui est en version bêta et privilégie les vraies routes de vélo"
+        "</li>"
+        "<li><a href=\"http://www.garmin.com/fr/maps/logiciel/basecamp/\" target=\"blank\">Basecamp</a>: un logiciel gratuit qui permet véritablement d’explorer les cartes et"
+        " d’étudier le dénivelé</li>"
+        "<li><a href=\"http://www.bikemap.net/fr/#/z5/45.55252,0.70312/terrain\" target=\"blank\">Bikemap</a>: retrouver les meilleurs trajets des utilisateurs"
+        "</li>"
+        "</ul>"
+        "<li>Utiliser une bonne vieille carte: si elle est assez précise, un surligneur permet de"
+        " mettre en évidence les petites routes à suivre.</li>"
+        "</ul>"
+        "<p>Notre conseil: tous les moyens sont bons pour arriver à ses fins. Combiner tous les"
+        " moyens énoncés pour construire son itinéraire est la meilleure des façons d’arriver à une"
+        " solution satisfaisante en terme de distance et de sécurité.</p>"
+        "<p>> Un exemple de route<a href=\"https://docs.google.com/document/d/1pmomn2f-ibzGD203bjsRpPynM7AocYbxlVKPVe6eSS4/edit?usp=sharing\" target=\"blank\">"
+        " du nord de la France jusqu’à Idanha-a-nova</a>"
+        "</p>"
+
+msgid "by train"
+msgstr "En train"
+
+msgid "get_there_by_train_content"
+msgstr "<p>Le train peut vous permettre de réduire votre trajet à vélo et de profiter quand même du"
+        " paysage. C’est aussi la première solution de replis si vous décidez de ne pas pédaler du"
+        " tout.</p>"
+        "<p>Pour plus d’infos, rendez-vous sur les sites des différentes compagnies:</p>"
+        "<ul>"
+        "<li><a href=\"http://www.voyages-sncf.com/\" target=\"blank\">Voyages SNCF</a>"
+        " - <a href=\"http://tgv.voyages-sncf.com/services-train/velo-a-bord\" target=\"blank\">Trains + vélo</a></li>"
+        "<li><a href=\"http://www.renfe.com/FR/viajeros/index.html\" target=\"blank\">Renfe</a>"
+        " - <a href=\"http://bicisaltren.conbici.org/?page_id=689\" target=\"blank\">Les vélos dans les trains espagnols</a></li>"
+        "<li><a href=\"http://www.cp.pt/cp/?lang=en\" target=\"blank\">CP (Caminhos de ferro Portugueses)</a>"
+        " - <a href=\"http://www.cp.pt/cp/displayPage.do?vgnextoid=ffc33f9c1cee5010VgnVCM1000007b01a8c0RCRD#6\" target=\"blank\">Les vélos dans les trains portugais</a>"
+        "</li>"
+        "</ul>"
+
+msgid "by bus"
+msgstr "En bus"
+
+msgid "get_there_by_bus_content"
+msgstr "<p>Vous pouvez prendre le bus avec votre vélo mais préférez dans ce cas "
+        "<a href=\"http://www.alsa.es/fr/\" target=\"blank\">voyager avec Alsa</a>."
+        " Le billet s’achète facilement et les conducteurs vous aideront"
+        " avec votre vélo et vos bagages. Sinon vous pouvez vous rabattre sur Eurolines"
+        " mais sans votre vélo! Les équipements sportifs ne sont en"
+        " effet pas acceptés à bord…</p>"
+        "<p>Le Boom Festival vous propose aussi des voyages en bus depuis les aéroports et grandes"
+        " villes. Pour plus d’informations, rendez-vous sur le <a href=\"http://www.boomfestival.org/boom2014/tickets/boom-bus-info/\" target=\"blank\">"
+        " site officiel du festival</a>."
+        "</p>"
+
+msgid "by car"
+msgstr "En voiture"
+
+msgid "get_there_by_car_content"
+msgstr "<p>Aller au festival à vélo prend assurément beaucoup plus de temps que des moyens de"
+        " transport plus traditionnels tels que la voiture. Si c’est la solution que vous"
+        " choisissez, essayez de privilégier le covoiturage:</p>"
+        "<ul>"
+        "<li><a href=\"https://www.liftshare.com/content/default.asp?sid=2582&sid2=2088&skin=539&lang=FR&country=FR#\" target=\"blank\">"
+        "Page Liftshare du Boom 2014</a>"
+        "</li>"
+        "<li><a href=\"http://www.trancegoa.org/l,trancegoa,12,,1.html\" target=\"blank\">"
+        "Trancegoa</a>: propositions et recherches de covoiturage"
+        "</li>"
+        "</ul>"
+
+msgid "teleportation"
+msgstr "Téléportation"
+
+msgid "teleport_there"
+msgstr "<p>Non c'est juste une blague...</p>"
+
+msgid "boom_bike_guide"
+msgstr "Lisez le <a href=\"http://www.boomfestival.org/boom2014/site/pdf/boomfest_bybike_initiative_supportGuide.pdf\" target=\"blank\">"
+        " Guide de la Boom By Bike Initiative</a> créé par les organisateurs"
+
+msgid "Together"
+msgstr "Ensemble"
+
+msgid "Visited cities"
+msgstr "Villes visitées"
+
+msgid "Hello"
+msgstr "Bonjour"
+
+msgid "You defined"
+msgstr "Vous avez défini"
+
+msgid "checkpoint(s)"
+msgstr "points de passage"
+
+msgid "Location"
+msgstr "Lieu"
+
+msgid "# Stops in location"
+msgstr "# Arrêts prévus"
+
+msgid "You have no checkpoints yet."
+msgstr "Vous n'avez prévu aucun arrêt pour le moment."
+
+msgid "Boom Bikers checkpoints"
+msgstr "Arrêts des cyclistes"
+
+msgid "cities will be visited by bikers"
+msgstr "villes doivent être visitées"
+
+msgid "Add a city you plan to visit"
+msgstr "Ajouter un point de passage"
+
+msgid "Use my Google Maps search as location"
+msgstr "Utiliser ma recherche Google Maps comme étape"
+
+msgid "Add this checkpoint"
+msgstr "Ajouter cette étape"
+
+msgid "Checkpoint"
+msgstr "Etape"
+
+msgid "Checkpoints"
+msgstr "Etapes"
+
+msgid "Enter a location"
+msgstr "Entrer une adresse"
+
+msgid "Visit date"
+msgstr "Date de passage"
+
+msgid "Bycycle tourers visiting"
+msgstr "Cyclistes passant par"
+
+msgid "Checkpoints defined by"
+msgstr "Etapes définies par"
+
+msgid "Contact"
+msgstr "Contacter"
+
+msgid "Contact this tourer by email"
+msgstr "Contacter ce cycliste par email"
+
+msgid "Sorry, this user did not set his email address :("
+msgstr "Désolé, cette personne n'a pas renseigné son adresse email :("
+
+msgid "You successfully added a checkpoint at"
+msgstr "Vous avez bien ajouté une étape à"
+
+msgid "No checkpoints have been defined yet."
+msgstr "Nos amis cyclistes n'ont défini aucune étape pour le moment."
+
+msgid "You are not logged in."
+msgstr "Vous n'êtes pas connecté."
+
+msgid "Would you like to create an account? We implemented a Facebook login to make it simple but a Facebook account is not mandatory to create an account."
+msgstr "Voulez-vous ouvrir un compte? Nous avons implémenté une connexion via Facebook pour que cela soit plus simple, mais avoir un compte Facebook n'est pas obligatoire pour s'inscrire."
+
+msgid "Once logged in, you will be able to define checkpoints and other cyclists will be able to contact you by email."
+msgstr "Une fois connecté, vous pourrez définir les étapes de votre voyage et les autres utilisateurs pourront vous contacter par email."
+
+msgid "Anyway, we will only ask for your name and email address, we do not save any personal data."
+msgstr "Peu importe le moyen choisi pour vous connecter, nous ne vous demandons que votre nom et votre adresse email. Aucune donnée personnelle n'est sauvegardée."
+
+msgid "> I want to login <"
+msgstr "> Je veux me connecter <"
+
+msgid "> I want to create an account <"
+msgstr "> Je veux créer un compte <"
+
+# # # # #
+# URLS  #
+# # # # #
+
+msgid "^bicycle-touring$"
+msgstr "^cyclotourisme$"
+
+msgid "^boom-festival$"
+msgstr "^boom-festival$"
+
+msgid "^boom-and-bike$"
+msgstr "^boom-et-velo$"
+
+msgid "^get-there$"
+msgstr "^se-rendre-au-festival$"
+
+msgid "^together$"
+msgstr "^ensemble$"
+
+msgid "'^city_visit/(?P<location>.+)$'"
+msgstr "'^etapes/(?P<location>.+)$'"
+
+msgid "^user_checkpoints/(?P<id>[0-9]+)$"
+msgstr "etapes_utilisateur/(?P<id>[0-9]+)$"
