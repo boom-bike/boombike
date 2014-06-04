@@ -42,7 +42,7 @@ def together(request, template='info/together.html'):
         form = VisitedCityForm(request.POST)
         if form.is_valid(): # All validation rules pass
            city_visit = form.save(user=request.user) # Do not let the user change this by any mean :)
-           message = u'%s "%s"' % (_("You successfully added a checkpoint at").decode('utf-8'), city_visit.location)
+           message = u'%s "%s"' % (unicode(_("You successfully added a checkpoint at")), city_visit.location)
            form = VisitedCityForm()
         else:
             message = _('Something bad happened...')
