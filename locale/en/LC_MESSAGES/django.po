@@ -829,6 +829,9 @@ msgstr "Discover why Boom and bike are perfect together. Get in the peaceful moo
 msgid "go_there_meta_description"
 msgstr "Where is the Boom Festival land? How far is it from your home?"
 
+msgid "together_meta_description"
+msgstr "Find bicycle tourers going to the Boom Land and have a look to their route!"
+
 msgid "Follow us"
 msgstr "Follow us"
 
