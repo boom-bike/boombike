@@ -230,15 +230,6 @@ $(document).ready(function() {
             </a>
         </p>
 
-        {% else %}
-        <h3>
-            {% trans "Logout" %}
-        </h3>
-        <p>
-            <a href="/accounts/logout">
-                {% trans "> I want to logout <" %}
-            </a>
-        </p>
         {% endif %}
 
         {% if user.is_authenticated %}
@@ -288,6 +279,15 @@ $(document).ready(function() {
                        disabled />
 
             </form>
+
+            <h3>
+                {% trans "Logout" %}
+            </h3>
+            <p>
+                <a href="/accounts/logout">
+                    {% trans "> I want to logout <" %}
+                </a>
+            </p>
         {% endif %}
 
         <!--
