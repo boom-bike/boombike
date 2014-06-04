@@ -1163,7 +1163,7 @@ msgid "Login / create an account"
 msgstr "Se connecter / Créer un compte"
 
 msgid "> I want to logout <"
-msgstr "> I want to logout <"
+msgstr "> Je veux me déconnecter <"
 
 msgid "together_title"
 msgstr "Ensemble sur la route"
