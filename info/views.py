@@ -15,6 +15,7 @@ from django.contrib.auth.models import User
 # Internal imports
 from info.forms import VisitedCityForm
 from info.tables import CityVisitTable, GroupedCityVisitTable
+from boombike.settings import GOOGLE_MAPS_API_KEY
 
 def home(request, template='info/home.html'):
     return render(request, template, {})
@@ -65,6 +66,9 @@ def together(request, template='info/together.html'):
     RequestConfig(request, paginate={"per_page": 15}).configure(all_users_city_visits_table)
     context_dict['all_users_city_visits_table'] = all_users_city_visits_table
     context_dict['all_users_city_visits_count'] = len(all_users_city_visits)
+
+    # Finally, we need the right API Key
+    context_dict['GOOGLE_MAPS_API_KEY'] = GOOGLE_MAPS_API_KEY
 
     return render(request, template, context_dict)
 

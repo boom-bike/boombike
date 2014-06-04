@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="{% static 'jquery-ui/css/flick/jquery-ui-1.10.4.custom.min.css' %}">
 
 <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB5IZOVFBQw366oHpvJgMJ_ic3DIo7EPsY&sensor=false&language=en">
+        src="https://maps.googleapis.com/maps/api/js?libraries=places&key={{ GOOGLE_MAPS_API_KEY }}&sensor=false&language=en">
 </script>
 
 <script>
@@ -227,6 +227,16 @@ $(document).ready(function() {
         <p>
             <a href="/accounts/signup">
                 {% trans "> I want to create an account <" %}
+            </a>
+        </p>
+
+        {% else %}
+        <h3>
+            {% trans "Logout" %}
+        </h3>
+        <p>
+            <a href="/accounts/logout">
+                {% trans "> I want to logout <" %}
             </a>
         </p>
         {% endif %}

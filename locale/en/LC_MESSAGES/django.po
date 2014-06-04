@@ -1061,6 +1061,9 @@ msgstr "> I want to create an account <"
 msgid "Login / create an account"
 msgstr "Login / create an account"
 
+msgid "> I want to logout <"
+msgstr "> I want to logout <"
+
 # # # # #
 # URLS  #
 # # # # #
