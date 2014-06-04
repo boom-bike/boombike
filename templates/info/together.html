@@ -1,0 +1,273 @@
+{% extends "info/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+{% load django_tables2 %}
+
+{% block head %}
+<title>Boom Bike ~ {% trans "together_title" %}</title>
+<meta name="description"
+      content="{% trans 'together_meta_description' %}">
+
+<script src="{% static 'pickadate/picker.js' %}"></script>
+<script src="{% static 'pickadate/picker.date.js' %}"></script>
+<link rel="stylesheet" href="{% static 'pickadate/themes/default.css' %}">
+<link rel="stylesheet" href="{% static 'pickadate/themes/default.date.css' %}">
+
+<link rel="stylesheet" href="{% static 'django_tables2/themes/paleblue/css/screen.css' %}" />
+
+<script src="{% static 'jquery-ui/js/jquery-ui-1.10.4.custom.min.js' %}"></script>
+<link rel="stylesheet" href="{% static 'jquery-ui/css/flick/jquery-ui-1.10.4.custom.min.css' %}">
+
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB5IZOVFBQw366oHpvJgMJ_ic3DIo7EPsY&sensor=false&language=en">
+</script>
+
+<script>
+/*
+ * Google maps
+ */
+
+// Places autocomplete
+function initialize() {
+    var mapOptions = {
+        center: new google.maps.LatLng(46.306884, 4.828731),
+        zoom: 4,
+        streetViewControl: false
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+    mapOptions);
+
+    var input = /** @type {HTMLInputElement} */(
+    document.getElementById('pac-input'));
+
+    var types = document.getElementById('type-selector');
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(types);
+
+    var autocomplete = new google.maps.places.Autocomplete(input);
+    autocomplete.bindTo('bounds', map);
+
+    var infowindow = new google.maps.InfoWindow();
+    var marker = new google.maps.Marker({
+        map: map,
+        anchorPoint: new google.maps.Point(0, -29)
+    });
+
+    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+        infowindow.close();
+        marker.setVisible(false);
+        var place = autocomplete.getPlace();
+        if (!place.geometry) {
+            return;
+        }
+
+        // If the place has a geometry, then present it on a map.
+        if (place.geometry.viewport) {
+            map.fitBounds(place.geometry.viewport);
+        } else {
+            map.setCenter(place.geometry.location);
+            map.setZoom(15);  // Why 15? Because it looks good.
+        }
+        marker.setIcon(/** @type {google.maps.Icon} */({
+            url: place.icon,
+            size: new google.maps.Size(71, 71),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(17, 34),
+            scaledSize: new google.maps.Size(35, 35)
+        }));
+        marker.setPosition(place.geometry.location);
+        marker.setVisible(true);
+
+        var address = '';
+        if (place.address_components) {
+            address = [
+                (place.address_components[0] && place.address_components[0].short_name || ''),
+                (place.address_components[1] && place.address_components[1].short_name || ''),
+                (place.address_components[2] && place.address_components[2].short_name || '')
+            ].join(' ');
+        }
+
+        infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+        infowindow.open(map, marker);
+
+        // Activate the get_google_maps_search button
+        $("button#get_google_maps_search").removeAttr("disabled");
+    });
+
+    // Sets a listener on a radio button to change the filter type on Places
+    // Autocomplete.
+    function setupClickListener(id, types) {
+        var radioButton = document.getElementById(id);
+        google.maps.event.addDomListener(radioButton, 'click', function() {
+            autocomplete.setTypes(types);
+        });
+    }
+
+    setupClickListener('changetype-all', []);
+    setupClickListener('changetype-establishment', ['establishment']);
+    setupClickListener('changetype-geocode', ['geocode']);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+function pac_input_changed(value) {
+    if (value == null || value == "") {
+        $("button#get_google_maps_search").attr("disabled", "")
+    }
+}
+
+$(document).ready(function() {
+    $('.datepicker').pickadate({
+        formatSubmit: 'yyyy/mm/dd',
+        hiddenName: true,
+        onSet: function(context) {
+            if($("#id_location").val() != "" &&
+               $("#id_location").val() != null &&
+               $("input#id_date").val() != "" &&
+               $("input#id_date").val() != null) {
+                $("input#submit_form").removeAttr("disabled")
+            }
+        }
+    });
+
+    $("button#get_google_maps_search").click(function() {
+        $("#id_location").val(document.getElementById("pac-input").value);
+    });
+
+    $("#city_visit_form").submit(function() {
+        $("#id_location").removeAttr("disabled");
+    });
+
+    if ("{{ message }}" != "") {
+        $('#message').bPopup();
+    }
+
+});
+
+</script>
+
+{% endblock %}
+
+{% block nav_together %}active{% endblock %}
+
+{% block content %}
+<div id="together_content" class="article_style">
+    <div id="article_title">
+        <h2 class="together">
+            {% trans "Together" %}
+        </h2>
+    </div>
+
+    <div id="article_content">
+        <h3>
+            {% trans "Visited cities" %}
+        </h3>
+
+        <div class="checkpoints_overview">
+            {% if user.is_authenticated %}
+                <div class="left half">
+                    <h4>
+                        {% trans "Hello" %} {{ user.username }} !
+                    </h4>
+                    {% if city_visits_table.data.queryset %}
+                        <p>
+                            {% trans "You defined" %} {{ nb_city_visits }} {% trans "checkpoint(s)" %}:
+                        </p>
+
+                        <div class="parent_table_container">
+                            {% render_table city_visits_table %}
+                        </div>
+                    {% else %}
+                        <p>
+                            {% trans 'You have no checkpoints yet.' %}
+                        </p>
+                    {% endif %}
+                </div>
+            {% endif %}
+
+            <div class="left {% if user.is_authenticated %}half{% else %}full{% endif %}">
+                <h4>
+                    {% trans "Boom Bikers checkpoints" %}
+                </h4>
+                {% if all_users_city_visits_table.data.queryset %}
+                    <p>
+                        {{ all_users_city_visits_count }} {% trans 'cities will be visited by bikers' %}:
+                    </p>
+                    <div class="parent_table_container">
+                        {% render_table all_users_city_visits_table %}
+                    </div>
+                {% else %}
+                    <p>
+                        {% trans 'No checkpoints have been defined yet.' %}
+                    </p>
+                {% endif %}
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        {% if user.is_authenticated %}
+
+            <!-- Show a foldable city visit form -->
+            <h3>
+                {% trans "Add a city you plan to visit" %}
+            </h3>
+
+            <input id="pac-input"
+                   placeholder="{% trans 'Enter a location' %}"
+                   onkeyup="pac_input_changed(this.value)"/>
+
+            <div id="map-canvas"></div>
+
+            <form action=""
+                  method="POST"
+                  id="city_visit_form">
+
+                {% csrf_token %}
+
+                <div>
+                    <button type="button"
+                            class="button"
+                            id="get_google_maps_search"
+                            disabled>
+                        {% trans 'Use my Google Maps search as location' %}
+                    </button>
+                </div>
+                <div>
+                    <label for="{{ form.date.auto_id }}">
+                        {{ form.location.label }}
+                    </label>
+                    {{ form.location }}
+                </div>
+                <div>
+                    <label for="{{ form.date.auto_id }}">
+                        {{ form.date.label }}
+                    </label>
+                    {{ form.date }}
+                </div>
+
+                <input type="submit" 
+                       class="button validate"
+                       value="{% trans 'Add this checkpoint' %}"
+                       id="submit_form"
+                       disabled />
+
+            </form>
+        {% endif %}
+
+        <!--
+            The user has added a city or an error message is to be displayed
+        -->
+        <div id="message" class="popup">
+            <span class="button b-close">
+                <span>X</span>
+            </span>
+
+            <div class="message_title">
+                <h2>Checkpoint</h2>
+            </div>
+            <p>{{ message }}</p>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

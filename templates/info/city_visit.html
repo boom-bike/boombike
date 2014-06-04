@@ -1,0 +1,43 @@
+{% extends "info/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block head %}
+<title>Boom Bike ~ {% trans "Visit" %} {{ location }}</title>
+<meta name="description"
+      content="{% trans 'city_meta_description' %}">
+
+{% endblock %}
+
+{% block nav_together %}active{% endblock %}
+
+{% block content %}
+<div id="city_visit_content" class="article_style">
+    <div id="article_title">
+        <h2 class="together">
+            {% trans "Together" %}
+        </h2>
+    </div>
+
+    <div id="article_content">
+        <h3>
+            {% trans "Bycycle tourers visiting" %} <strong>{{ location }}</strong>
+        </h3>
+
+        <p>
+            {% if users %}
+                <ul>
+                {% for user in users %}
+                    <li>
+                        <a href="{% url 'user_checkpoints' id=user.pk %}">{{ user }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                {% trans "Nobody is cycling to this location" %}
+            {% endif %}
+        </p>
+
+    </div>
+</div>
+{% endblock %}

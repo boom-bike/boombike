@@ -328,7 +328,7 @@ msgstr "<p>Going to the festival by car could be the fastest and/or cheapest way
         " reduce carbon emissions."
         "<ul><li><a href=\"https://www.liftshare.com/content/default.asp?sid=2582&sid2=2088&skin=539&lang=EN&country=GB\" target=\"blank\">Boom Festival Liftshare</a>"
         "</li>"
-        "<li><a href=\"http://www.trancegoa.org/l,trancegoa,12,,1.html\" target=\"blank\">Trancegoa</a>: French trance lovers offering and seeking car travels as accommodation:"
+        "<li><a href=\"http://www.trancegoa.org/l,trancegoa,12,,1.html\" target=\"blank\">Trancegoa</a>: French trance lovers offering and seeking car travels as well as accommodation."
         "</li>"
         "</ul>"
         "</p>"
@@ -342,6 +342,75 @@ msgstr "<p>Nope, just kidding...</p>"
 msgid "boom_bike_guide"
 msgstr "Check out the <a href=\"http://www.boomfestival.org/boom2014/site/pdf/boomfest_bybike_initiative_supportGuide.pdf\" target=\"blank\">"
         " Boom By Bike Initiative Support Guide</a> written by Boom officials"
+
+msgid "Together"
+msgstr "Together"
+
+msgid "Visited cities"
+msgstr "Visited cities"
+
+msgid "Hello"
+msgstr "Hello"
+
+msgid "You defined"
+msgstr "You defined"
+
+msgid "checkpoint(s)"
+msgstr "checkpoint(s)"
+
+msgid "Location"
+msgstr "Location"
+
+msgid "# Stops in location"
+msgstr "# Stops in location"
+
+msgid "You have no checkpoints yet."
+msgstr "You have no checkpoints yet."
+
+msgid "Boom Bikers checkpoints"
+msgstr "Boom Bikers checkpoints"
+
+msgid "cities will be visited by bikers"
+msgstr "cities will be visited by bikers"
+
+msgid "Add a city you plan to visit"
+msgstr "Add a city you plan to visit"
+
+msgid "Use my Google Maps search as location"
+msgstr "Use my Google Maps search as location"
+
+msgid "Add this checkpoint"
+msgstr "Add this checkpoint"
+
+msgid "Checkpoint"
+msgstr "Checkpoint"
+
+msgid "Checkpoints"
+msgstr "Checkpoints"
+
+msgid "Enter a location"
+msgstr "Enter a location"
+
+msgid "Visit date"
+msgstr "Visit date"
+
+msgid "Bycycle tourers visiting"
+msgstr "Bycycle tourers visiting"
+
+msgid "Checkpoints defined by"
+msgstr "Checkpoints defined by"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "You successfully added a checkpoint at"
+msgstr "You successfully added a checkpoint at"
+
+msgid "Sorry, this user did not set his email address :("
+msgstr "Sorry, this user did not set his email address :("
+
+msgid "Contact this tourer by email"
+msgstr "Contact this tourer by email"
 
 # # # # #
 # URLS  #
@@ -359,5 +428,11 @@ msgstr "^boom-and-bike$"
 msgid "^get-there$"
 msgstr "^get-there$"
 
-#msgid ""
-#msgstr ""
+msgid "^accounts/login/$"
+msgstr "^accounts/login/$"
+
+msgid "accounts/logout/$"
+msgstr "accounts/logout/$"
+
+msgid "^together$"
+msgstr "^together$"

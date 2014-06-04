@@ -15,7 +15,8 @@ div.content {
 }
 
 div.article_style {
-    width: 100%;
+    width: 99.5%;
+    margin-bottom: 0;
 }
 
 div.article_style p {
@@ -218,3 +219,31 @@ span#estimated_km_by_bike {
     height: 32px;
 }
 
+div.half {
+    width: 100%;
+}
+
+div.half p {
+    padding-left: 29px;
+}
+
+#pac-input {
+    padding: 0 10px 0 12px;
+    width: 250px;
+    font-size: 14px;
+    top: 4px !important;
+    left: 10px !important;
+}
+
+div#user_map {
+    height: 300px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black !important;
+    border-top: 1px solid black !important;
+}
+
+div.table-container_center {
+    height: 100%;
+    border-top: 1px solid black !important;
+}

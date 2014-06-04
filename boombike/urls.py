@@ -27,6 +27,10 @@ urlpatterns = patterns('',
 
      # Albums
      url(_(r'^albums$'), 'info.views.albums', name='albums'),
+
+     # Facebook all auth
+     (r'^accounts/', include('allauth.urls')),
+
 )
 
 urlpatterns += i18n_patterns('',
@@ -35,6 +39,15 @@ urlpatterns += i18n_patterns('',
     url(_(r'^boom-festival$'), 'info.views.boom_festival', name='boom-festival'),
     url(_(r'^boom-and-bike$'), 'info.views.boom_and_bike', name='boom-and-bike'),
     url(_(r'^get-there$'), 'info.views.get_there', name='get-there'),
+    url(_(r'^together$'), 'info.views.together', name='together'),
+    url(_(r'^get-there$'), 'info.views.get_there', name='get-there'),
+    url(_(r'^city_visit/(?P<location>.+)$'), 'info.views.city_visit', name='city_visit'),
+    url(_(r'^user_checkpoints/(?P<id>[0-9]+)$'), 'info.views.user_checkpoints', name='user_checkpoints'),
 )
+
+#urlpatterns += patterns('django.contrib.auth.views',
+#    (_(r'^accounts/login/$'),  'login'),
+#    (_(r'^accounts/logout/$'), 'logout'),
+#)
 
 handler404 = 'info.views.page_not_found'

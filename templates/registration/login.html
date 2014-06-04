@@ -1,0 +1,81 @@
+{% extends "info/base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+{% load socialaccount %}
+
+{% block head %}
+    <title>Boom Bike ~ {% trans "What is the Boom Festival?" %}</title>
+    <meta name="description"
+          content="{% trans 'boom_festival_meta_description' %}">
+
+    <script>
+        function submit_django_login_form() {
+            alert("test");
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
+<div id="together_content" class="article_style">
+    <div id="article_content">
+        <h3 class="login_title">
+            {% trans "Login" %}
+        </h3>
+        {% if form.errors %}
+            <div class="row">
+                <p class="login_error">
+                    {% trans "Your username and password didn't match. Please try again." %}
+                </p>
+            </div>
+        {% endif %}
+
+        <div class="login_content">
+            <form method="post" action="" class="" id="django_login">
+                {% csrf_token %}
+                <div class="left login_label">
+                    <label for="{{ form.username.auto_id }}" class="control-label">
+                        {{ form.username.label }}
+                    </label>
+                </div>
+                <div class="left login_field">
+                    {{ form.username }}
+                </div>
+                <div class="clear"></div>
+
+                <div class="left login_label">
+                    <label for="{{ form.password.auto_id }}" class="control-label">
+                        {{ form.password.label }}
+                    </label>
+                </div>
+                <div class="left login_field">
+                    {{ form.password }}
+                </div>
+                <div class="clear"></div>
+
+                <input type="submit" id="django_login_button" value="{% trans 'Login' %}"/>
+                <input type="hidden" name="next" value="{{ next }}" />
+            </form>
+            
+            <p>
+            - {% trans "Or" %} -
+            </p>
+        </div>
+
+        <div class="login_content">
+            <a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Connect</a>
+<!--            <form action="{% url 'facebook_connect' %}?facebook_login=1"
+                  method="post"
+                  id="facebook-login"
+                  class="">
+                <input type="hidden" value="1" name="connect" />
+                {% csrf_token %}
+                <a onclick="F.connect(this.parentNode); return false;" href="javascript:void(0);">
+                    {% trans "Facebook connect" %}
+                </a>
+                <input onclick="F.connect(this.parentNode); return false;" type="image" src="{{ STATIC_URL }}django_facebook/images/facebook_login.png" />
+            </form>-->
+        </div>
+
+    </div>
+</div>
+{% endblock %}

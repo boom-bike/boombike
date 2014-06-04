@@ -360,6 +360,75 @@ msgid "boom_bike_guide"
 msgstr "Lisez le <a href=\"http://www.boomfestival.org/boom2014/site/pdf/boomfest_bybike_initiative_supportGuide.pdf\" target=\"blank\">"
         " Guide de la Boom By Bike Initiative</a> créé par les organisateurs"
 
+msgid "Together"
+msgstr "Ensemble"
+
+msgid "Visited cities"
+msgstr "Villes visitées"
+
+msgid "Hello"
+msgstr "Bonjour"
+
+msgid "You defined"
+msgstr "Vous avez défini"
+
+msgid "checkpoint(s)"
+msgstr "points de passage"
+
+msgid "Location"
+msgstr "Lieu"
+
+msgid "# Stops in location"
+msgstr "# Arrêts prévus"
+
+msgid "You have no checkpoints yet."
+msgstr "Vous n'avez prévu aucun arrêt pour le moment."
+
+msgid "Boom Bikers checkpoints"
+msgstr "Arrêts des cyclistes"
+
+msgid "cities will be visited by bikers"
+msgstr "villes doivent être visitées"
+
+msgid "Add a city you plan to visit"
+msgstr "Ajouter un point de passage"
+
+msgid "Use my Google Maps search as location"
+msgstr "Utiliser ma recherche Google Maps comme étape"
+
+msgid "Add this checkpoint"
+msgstr "Ajouter cette étape"
+
+msgid "Checkpoint"
+msgstr "Etape"
+
+msgid "Checkpoints"
+msgstr "Etapes"
+
+msgid "Enter a location"
+msgstr "Entrer une adresse"
+
+msgid "Visit date"
+msgstr "Date de passage"
+
+msgid "Bycycle tourers visiting"
+msgstr "Cyclistes passant par"
+
+msgid "Checkpoints defined by"
+msgstr "Etapes définies par"
+
+msgid "Contact"
+msgstr "Contacter"
+
+msgid "Contact this tourer by email"
+msgstr "Contacter ce cycliste par email"
+
+msgid "Sorry, this user did not set his email address :("
+msgstr "Désolé, cette personne n'a pas renseigné son adresse email :("
+
+msgid "You successfully added a checkpoint at"
+msgstr "Vous avez bien ajouté une étape à"
+
 # # # # #
 # URLS  #
 # # # # #
@@ -375,3 +444,12 @@ msgstr "^boom-et-velo$"
 
 msgid "^get-there$"
 msgstr "^se-rendre-au-festival$"
+
+msgid "^together$"
+msgstr "^ensemble$"
+
+msgid "'^city_visit/(?P<location>.+)$'"
+msgstr "'^etapes/(?P<location>.+)$'"
+
+msgid "^user_checkpoints/(?P<id>[0-9]+)$"
+msgstr "etapes_utilisateur/(?P<id>[0-9]+)$"

@@ -1,0 +1,70 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load account %}
+{% load socialaccount %}
+{% load url from future %}
+{% load info_extras %}
+
+{% block head %}
+    <title>Boom Bike ~ {% trans "Sign In" %}</title>
+    <meta name="description"
+          content="{% trans 'boom_festival_meta_description' %}">
+{% endblock %}
+
+{% block content %}
+<div id="login_content" class="article_style">
+    <div id="article_content">
+        <h3 class="login_title">
+            {% trans "Sign In" %}
+        </h3>
+        <div id="django_login_div" class="login_content">
+            <p>
+                {% with "together"|translate_url_filter as next %}
+                    <a href="{% provider_login_url 'facebook' method='oauth2' next=next %}">
+                        {% trans "Login with Facebook" %}
+                    </a>
+                {% endwith %}
+            </p>
+
+            <p>
+                {% trans 'or' %}
+            </p>
+
+            <p>{% blocktrans %}If you have not created an account yet, then please
+            <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+
+            <form class="login" method="POST" action="{% url 'account_login' %}">
+              {% csrf_token %}
+
+              <div class="left login_label">
+                    <label for="{{ form.username.auto_id }}" class="control-label">
+                        {{ form.login.label }}
+                    </label>
+                </div>
+                <div class="left login_field">
+                    {{ form.login }}
+                </div>
+                <div class="clear"></div>
+
+                <div class="left login_label">
+                    <label for="{{ form.password.auto_id }}" class="control-label">
+                        {{ form.password.label }}
+                    </label>
+                </div>
+                <div class="left login_field">
+                    {{ form.password }}
+                </div>
+                <div class="clear"></div>
+
+              {% if redirect_field_value %}
+                  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+              {% endif %}
+              <a id="forgot_password" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+              <button id="login_button" class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

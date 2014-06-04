@@ -115,6 +115,9 @@
                             <li>
                                 <a href="{% url 'get-there' %}">{% trans "Get there" %}</a>
                             </li>
+                            <li>
+                                <a href="{% url 'together' %}">{% trans "Together" %}</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -146,6 +149,9 @@
                 </div>
                 <div class="left menu_item get_there_menu_item {% block nav_go_there %}{% endblock %}">
                     <a href="{% url 'get-there' %}">{% trans "Get there" %}</a>
+                </div>
+                <div class="left menu_item together_menu_item {% block nav_together %}{% endblock %}">
+                    <a href="{% url 'together' %}">{% trans "Together" %}</a>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -184,7 +190,8 @@
                     <a href="{% url 'bicycle-touring' %}">{% trans "Bicycle Touring" %}</a><br>
                     <a href="{% url 'boom-festival' %}">{% trans "Boom Festival" %}</a><br>
                     <a href="{% url 'boom-and-bike' %}">{% trans "Boom and Bike" %}</a><br>
-                    <a href="{% url 'get-there' %}">{% trans "Get there" %}</a>
+                    <a href="{% url 'get-there' %}">{% trans "Get there" %}</a><br>
+                    <a href="{% url 'together' %}">{% trans "Together" %}</a>
                 </div>
                 <div class="left sitemap_col">
                     <h4>{% trans "Follow us" %}</h4>
