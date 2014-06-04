@@ -1087,7 +1087,7 @@ msgstr "Lieu"
 msgid "# Stops in location"
 msgstr "# Arrêts prévus"
 
-msgid "You have no checkpoints yet."
+msgid "You have no checkpoint yet."
 msgstr "Vous n'avez prévu aucun arrêt pour le moment."
 
 msgid "Boom Bikers checkpoints"
@@ -1135,7 +1135,7 @@ msgstr "Désolé, cette personne n'a pas renseigné son adresse email :("
 msgid "You successfully added a checkpoint at"
 msgstr "Vous avez bien ajouté une étape à"
 
-msgid "No checkpoints have been defined yet."
+msgid "No checkpoint defined yet."
 msgstr "Nos amis cyclistes n'ont défini aucune étape pour le moment."
 
 msgid "You are not logged in."
