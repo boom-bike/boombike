@@ -1165,6 +1165,9 @@ msgstr "Se connecter / Créer un compte"
 msgid "> I want to logout <"
 msgstr "> I want to logout <"
 
+msgid "together_title"
+msgstr "Ensemble sur la route"
+
 # # # # #
 # URLS  #
 # # # # #
