@@ -429,6 +429,9 @@ msgstr "Désolé, cette personne n'a pas renseigné son adresse email :("
 msgid "You successfully added a checkpoint at"
 msgstr "Vous avez bien ajouté une étape à"
 
+msgid "No checkpoints have been defined yet."
+msgstr "Nos amis cyclistes n'ont défini aucune étape pour le moment."
+
 # # # # #
 # URLS  #
 # # # # #

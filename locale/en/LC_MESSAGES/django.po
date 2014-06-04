@@ -412,6 +412,9 @@ msgstr "Sorry, this user did not set his email address :("
 msgid "Contact this tourer by email"
 msgstr "Contact this tourer by email"
 
+msgid "No checkpoints have been defined yet."
+msgstr "No checkpoints have been defined yet."
+
 # # # # #
 # URLS  #
 # # # # #
