@@ -115,11 +115,13 @@
         {% if current_user.email %}
         <p>
             <a href="mailto:{{ current_user.email }}" target="_top">
-                    {% trans "Contact this tourer by email" %}
+                {% trans "Contact this tourer by email" %}
             </a>
         </p>
         {% else %}
-            {% trans "Sorry, this user did not set his email address :(" %}
+            <p>
+                {% trans "Sorry, this user did not set his email address :(" %}
+            </p>
         {% endif %}
 
     </div>
