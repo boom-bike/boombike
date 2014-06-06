@@ -37,20 +37,21 @@ def together(request, template='info/together.html'):
 
     if request.method == 'GET':
         form = VisitedCityForm()
+        context_dict['form'] = form
 
     elif request.method == 'POST':
         form = VisitedCityForm(request.POST)
+        context_dict['form'] = form
+
         if form.is_valid(): # All validation rules pass
            city_visit = form.save(user=request.user) # Do not let the user change this by any mean :)
            message = u'%s "%s"' % (unicode(_("You successfully added a checkpoint at")), city_visit.location)
-           form = VisitedCityForm()
+           context_dict['form'] = VisitedCityForm() # We want the form to blank here
         else:
             message = _('Something bad happened...')
             print form.errors
 
         context_dict['message'] = message
-
-    context_dict['form'] = form
 
     if request.user.is_authenticated():
         user_city_visits = CityVisit.objects.filter(user=request.user)

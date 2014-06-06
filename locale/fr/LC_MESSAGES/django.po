@@ -1141,8 +1141,8 @@ msgstr "Nos amis cyclistes n'ont défini aucune étape pour le moment."
 msgid "You are not logged in."
 msgstr "Vous n'êtes pas connecté."
 
-msgid "Would you like to create an account? We implemented a Facebook login to make it simple but a Facebook account is not mandatory to create an account."
-msgstr "Voulez-vous ouvrir un compte? Nous avons implémenté une connexion via Facebook pour que cela soit plus simple, mais avoir un compte Facebook n'est pas obligatoire pour s'inscrire."
+msgid "Would you like to create an account? We implemented a Facebook login to make it simple but a Facebook account is not mandatory. Click \"I want to login\" to use Facebook."
+msgstr "Voulez-vous ouvrir un compte? Nous avons implémenté une connexion via Facebook pour que cela soit plus simple, mais avoir un compte Facebook n'est pas obligatoire pour s'inscrire.  Cliquez sur \"Je veux me connecter\" pour utiliser Facebook."
 
 msgid "Once logged in, you will be able to define checkpoints and other cyclists will be able to contact you by email."
 msgstr "Une fois connecté, vous pourrez définir les étapes de votre voyage et les autres utilisateurs pourront vous contacter par email."
@@ -1170,6 +1170,9 @@ msgstr "Ensemble sur la route"
 
 msgid "Logout"
 msgstr "Se déconnecter"
+
+msgid "Please provide your email address, it will allow others to contact you."
+msgstr "Merci de fournir votre adresse email, cela permettra de vous contacter."
 
 # # # # #
 # URLS  #

@@ -20,13 +20,60 @@
 
         <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
             {% csrf_token %}
-            {{ form.as_p }}
+
+            <div class="left login_label">
+                <label for="{{ form.username.auto_id }}" class="control-label">
+                    {{ form.username.label }}
+                </label>
+            </div>
+            <div class="left login_field">
+                {{ form.username }}
+            </div>
+            <div class="clear"></div>
+
+            <div class="left login_label">
+                <label for="{{ form.email.auto_id }}" class="control-label">
+                    {% trans "Email" %} *
+                </label>
+            </div>
+            <div class="left login_field">
+                {{ form.email }}
+            </div>
+            <div class="clear"></div>
+
+            <div class="left login_label">
+                <label for="{{ form.password1.auto_id }}" class="control-label">
+                    {{ form.password1.label }}
+                </label>
+            </div>
+            <div class="left login_field">
+                {{ form.password1 }}
+            </div>
+            <div class="clear"></div>
+
+            <div class="left login_label">
+                <label for="{{ form.password2.auto_id }}" class="control-label">
+                    {{ form.password2.label }}
+                </label>
+            </div>
+            <div class="left login_field">
+                {{ form.password2 }}
+            </div>
+            <div class="clear"></div>
+
             {% if redirect_field_value %}
                 <input type="hidden"
                        name="{{ redirect_field_name }}"
                        value="{{ redirect_field_value }}" />
             {% endif %}
-            <button type="submit" class="button">{% trans "Sign Up" %} &raquo;</button>
+            <p>
+                <small>
+                    * {% trans "Please provide your email address, it will allow others to contact you." %}
+                </small>
+            </p>
+            <p>
+                <button type="submit" class="button">{% trans "Sign Up" %} &raquo;</button>
+            </p>
         </form>
 
     </div>

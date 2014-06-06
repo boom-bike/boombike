@@ -38,8 +38,8 @@
             <form class="login" method="POST" action="{% url 'account_login' %}">
               {% csrf_token %}
 
-              <div class="left login_label">
-                    <label for="{{ form.username.auto_id }}" class="control-label">
+                <div class="left login_label">
+                    <label for="{{ form.login.auto_id }}" class="control-label">
                         {{ form.login.label }}
                     </label>
                 </div>

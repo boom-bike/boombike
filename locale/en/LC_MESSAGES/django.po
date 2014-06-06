@@ -1040,8 +1040,8 @@ msgstr "No checkpoint defined yet."
 msgid "You are not logged in."
 msgstr "You are not logged in."
 
-msgid "Would you like to create an account? We implemented a Facebook login to make it simple but a Facebook account is not mandatory."
-msgstr "Would you like to create an account? We implemented a Facebook login to make it simple but a Facebook account is not mandatory."
+msgid "Would you like to create an account? We implemented a Facebook login to make it simple but a Facebook account is not mandatory. Click \"I want to login\" to use Facebook."
+msgstr "Would you like to create an account? We implemented a Facebook login to make it simple but a Facebook account is not mandatory. Click \"I want to login\" to use Facebook."
 
 msgid "Once logged in, you will be able to define checkpoints and other cyclists will be able to contact you by email."
 msgstr "Once logged in, you will be able to define checkpoints and other cyclists will be able to contact you by email."
@@ -1069,6 +1069,9 @@ msgstr "Together on the road"
 
 msgid "Logout"
 msgstr "Logout"
+
+msgid "Please provide an email address, this will help others in contacting you."
+msgstr "Please provide an email address, this will help others in contacting you."
 
 # # # # #
 # URLS  #

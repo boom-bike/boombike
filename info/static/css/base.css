@@ -607,6 +607,10 @@ div.article_style p, div.article_style ul, div.article_style form {
     background-color: #F0F0F0;
 }
 
+div.article_style form p {
+    padding-left: 0px;
+}
+
 div.article_style ul {
     padding-left: 70px;
 }
@@ -1079,6 +1083,10 @@ div.login_label {
 div.login_field {
     width: 120px;
 }
+
+/*div.login_label, div.login_field {
+    padding-left: 30px;
+}*/
 
 input#django_login_button {
     margin-top: 15px;
