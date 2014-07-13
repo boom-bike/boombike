@@ -1193,8 +1193,8 @@ msgstr "^se-rendre-au-festival$"
 msgid "^together$"
 msgstr "^ensemble$"
 
-msgid "'^city_visit/(?P<location>.+)$'"
-msgstr "'^etapes/(?P<location>.+)$'"
+msgid "^city_visit/(?P<location>.+)$"
+msgstr "^etapes/(?P<location>.+)$"
 
 msgid "^user_checkpoints/(?P<id>[0-9]+)$"
 msgstr "etapes_utilisateur/(?P<id>[0-9]+)$"
