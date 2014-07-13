@@ -77,8 +77,6 @@ def together(request, template='info/together.html'):
 def city_visit(request, location, template='info/city_visit.html'):
     context_dict = {}
 
-    print location
-
     # Who are the users visiting the city?
     users_visiting = CityVisit.objects.filter(location=location)\
                         .order_by('user').values_list('user', flat=True).distinct()
