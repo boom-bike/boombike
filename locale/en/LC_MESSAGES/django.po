@@ -1097,3 +1097,9 @@ msgstr "accounts/logout/$"
 
 msgid "^together$"
 msgstr "^together$"
+
+msgid "'^city_visit/(?P<location>.+)$'"
+msgstr "'^city_visit/(?P<location>.+)$'"
+
+msgid "^user_checkpoints/(?P<id>[0-9]+)$"
+msgstr "user_checkpoints/(?P<id>[0-9]+)$"
